@@ -1,0 +1,566 @@
+.btn-pro {
+    padding: 10px 30px;
+    border: 1px solid #142fc6;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 30px 0;
+    display: inline-block;
+    background: #142fc6;
+    color: #fff;
+    transition: all 0.3s ease;
+    font-weight: 700;
+}
+.btn-pro:hover {
+  background: #fff;
+  color: #142fc6;
+  border-color:#142fc6;
+}
+.awe-card{
+  float: left;
+    max-width: 100%;
+    padding: 10px 30px 26px;
+}
+
+.card.awe-card.switch-lite {
+    margin: 0 50px;
+}
+.card-header{
+  position: relative;
+}
+.edumodo .card-header:before {
+    content: ""; 
+    position: absolute;
+    transform: rotate(-45deg);
+    left: -95px;
+    top: -44px;
+    border-bottom: 100px solid #142fc6;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+.edumodo .card-header:after{
+    content: "Black Friday Sale";
+    position: absolute;
+    transform: rotate(-45deg);
+    left: -36px;
+    font-size: 12px;
+    top: 0;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+
+.switch-lite .card-header:before {
+    content: ""; 
+    position: absolute;
+    transform: rotate(-45deg);
+    left: -95px;
+    top: -44px;
+    border-bottom: 100px solid #142fc6;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+.switch-lite .card-header:after{
+    content: "Business Theme";
+    position: absolute;
+    transform: rotate(-45deg);
+    left: -36px;
+    font-size: 12px;
+    top: 0;
+    color: #fff;
+    text-transform: uppercase;
+  }
+.awe-card .slide-thumbnail{
+    width: 45%;
+    float: left;
+}
+
+.awe-card .slide-thumbnail img{
+    width: 100%;
+}
+
+.awe-card .card-info{
+    width: 52%;
+    float: right;
+    padding: 10px 0px 20px 30px;
+}
+
+.awe-card .card-title a {
+    text-decoration: none;
+}
+
+.awe-card .card-info button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 26px; 
+    height: auto;
+    margin: 15px 10px 0 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-width: 1px;
+    font-weight: 700;
+    border-style: solid;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    }
+  
+.awe-card h2{
+  font-size: 32px;
+  line-height: 40px;
+  margin: 10px 0 20px;
+}
+.awe-card p{
+ font-size: 16px;
+ line-height: 25px;
+}
+.awe-header-wrapper {
+    padding: 20px;
+    overflow: hidden;
+}
+.awe-title-left {
+    width: 80%;
+    float: left;
+}
+h1.awe-title-main {
+    padding: 0;
+    line-height: 1.3em;
+    font-size: 42px;
+    margin-top: 5px;
+}
+.awe-title-sub {
+    color:#777;
+    font-weight: normal;
+    margin-left: 3px;
+}
+.awe-title-right{
+    float: right;
+}
+.awe-wrap {
+    background: white;
+}
+.button.awe-btn {
+    border: none;
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 15px;
+    display: block;
+    box-shadow: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px !important;
+    text-shadow: 0px 5px 4px rgba(0,0,0,.30);
+}
+.awe-btn.awe-save-button:hover,
+.awe-btn.awe-save-button:focus,
+.awe-btn.awe-save-button {
+    background: #DD267B;
+background: -moz-linear-gradient(-45deg,  #DD267B 0%, #DD267B 69%);
+background: -webkit-linear-gradient(-45deg,  #DD267B 0%,#DD267B 69%);
+background: linear-gradient(135deg,  #DD267B 0%,#DD267B 69%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DD267B', endColorstr='#DD267B',GradientType=1 );
+
+
+    margin-bottom: 0;
+    margin-top: 30px;
+    padding: 8px 15px;
+    color: #ffffff;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+/*.awe-btn.awe-save-button:hover,
+.awe-btn.awe-save-button:focus {
+    
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: none;
+}*/
+
+.awe-settings-tabs-list {
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid #ddd;
+    padding: 1px 1px 1px 0;
+    background: #F1F1F1;
+}
+/*About Settings Tab*/
+.awe-settings-tabs-list li {
+    margin-bottom: 0px;
+    margin-left: 0;
+    line-height: 51px;
+}
+.awe-tab-list-item {
+    padding: 11px 30px;
+    line-height: 33px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+    text-decoration: none;
+    border-bottom: none;
+    background: #ffffff;
+    box-shadow: 0px 0px 4px rgba(0,0,0,.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.awe-settings-tabs-list li:not(:last-child) a {
+    border-right: 0;
+}
+.awe-settings-tabs-list li  a span{
+    display: inline-block;
+    margin-right: 7px;
+}
+.awe-tab-list-item:focus {
+    box-shadow: none;
+}
+li.ui-state-default:not(.ui-state-active):hover a {
+    background: #fff;
+    color: #444;
+}
+li.ui-state-active a{
+    outline: none;
+    color: black;
+    background: transparent;
+    box-shadow: none;
+    color: #DD267B;
+}
+.awe-row {
+    width: 100%;
+    overflow: hidden;
+}
+.awe-settings-tabs  {
+    padding: 15px 25px;
+}
+#awe-about {
+    margin-top: 50px;
+}
+.awe-col-half {
+    width: 40%;
+    height: auto;
+    float: left;
+}
+.awe-about-panel {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.awe-icon-container {
+    float: left;
+    display: inline-block;
+    width: 45px;
+}
+.awe-icon-container i {
+    font-size: 25px;
+}
+.awe-text-container {
+    display: inline-block;
+    width: 80%;
+}
+.awe-text-container h4 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 18px;
+}
+.awe-text-container p {
+    line-height: 22px;
+    color: #444;
+    font-size: 14px;
+    margin: 1em 0;
+}
+/*ELements Settings Tab*/
+.awe-elements-table {
+    border-collapse: collapse;
+    margin-top: 2.5em;
+    margin-left: 5px;
+    width: 100%;
+    clear: both;
+}
+.awe-elements-table th {
+    vertical-align: top;
+    text-align: left;
+    padding: 20px 10px 20px 0;
+    width: 170px;
+    line-height: 1.3;
+    font-weight: 600;
+    font-size: 16px;
+}
+.awe-elements-table tr:not(:last-child)>th{
+    border-bottom: 1px solid #ddd;
+}
+.awe-elements-table td {
+    margin-bottom: 9px;
+    padding: 15px 10px;
+    line-height: 1.3;
+    vertical-align: middle;
+}
+.awe-elements-table .awe-element-desc {
+    font-weight: 300;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #ddd;
+}
+ /* The switch - the box around the rectangle */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 28px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+    display:none;
+}
+
+/* The rectangle */
+.rectangle {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(242,242,242);
+    box-shadow: 0 0 2px 1px #ccc inset;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.rectangle:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 0px;
+    background: radial-gradient(farthest-corner at 14px 0px, rgb(240,240,240) 50%, rgb(202,202,202) 100%);
+    -webkit-transition: .4s;
+    transition: .4s;
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgb(198,198,198);
+    top: 2px;
+}
+
+input:checked + .rectangle {
+    background: #DD267B;
+    background: -moz-linear-gradient(-45deg, #DD267B 0%, #DD267B 69%);
+    background: -webkit-linear-gradient(-45deg, #DD267B 0%,#DD267B 69%);
+    background: linear-gradient(135deg, #75E6760%,#DD267B 69%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DD267B', endColorstr='#DD267B',GradientType=1 );
+    box-shadow: 0 0 2px 1px #DD267B inset;
+    border: 1px solid #DD267B;
+}
+input:focus + .rectangle {
+  box-shadow: 0 0 1px rgb(24,164,253);
+}
+input:checked + .rectangle:before {
+    border: 1px solid #DD267B;
+    -webkit-transform: translateX(39px);
+    -ms-transform: translateX(39px);
+    transform: translateX(38px);
+    box-shadow: -3px 0px 1px rgba(0,0,0,.30);
+}
+
+/* Rounded rectangles */
+.rectangle.round {
+    border: 1px solid rgb(184,184,185);
+    border-radius: 30px;
+}
+.rectangle.round:before {
+    border-radius: 50%;
+    box-shadow: 3px 0 1px rgba(0,0,0,.30);
+}
+.awe-maps-table {
+    text-align: left;
+}
+.awe-api-title {
+    display: inline-block;
+    margin: 0;
+}
+.awe-api-disable-title label {
+    margin-right: 15px;
+}
+.awe-api-disable-title span {
+    font-weight: normal;
+}
+.awe-maps-api-notice {
+    margin: 10px 0 0 0;
+}
+.awe-api-title input {
+    margin-top: 10px;
+    font-size: normal;
+    font-weight: normal;
+    width: 400px;
+    margin-left: 30px;
+}
+
+/*Row column story*/
+.row{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+.col-sm-4{
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+     padding-right: 15px;
+    padding-left: 15px;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+/*switchbox*/
+
+.awe-widget-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+    box-shadow: 0px 2px 10px rgba(11,69,180,.10);
+    margin-bottom: 20px;
+}
+
+.awe-widget-box .awe-widget-box-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #5a5959;
+    transition: all .30s linear;
+}
+.awe-widget-box:hover {
+    box-shadow: 0px 2px 10px rgba(176, 56, 116, 0.2);
+}
+.awe-widget-box:hover  a span,
+.awe-widget-box:hover {
+    background: -webkit-linear-gradient(#DD267B, #DD267B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.awe-widget-box .awe-widget-box-title a span {
+    font-size: 16px;
+    color: #5F5959;
+    transition: all .30s linear;
+}
+
+.awe-widget-box .awe-widget-box-title a,.awe-widget-box .awe-widget-box-title a :hover,.awe-widget-box .awe-widget-box-title a:focus {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.awe-widget-box .awe-widget-box-title a {
+    margin-left: 5px;
+}
+.awe-settings-tabs-head {
+    display: flex;
+    justify-content: space-between;
+}
+/*--------------------------------------
+    // Activation Form
+--------------------------------------*/
+.awe-activation-key-area {
+    box-shadow: 0px 2px 5px rgba(0,0,0,.10);
+    padding: 25px 15px 25px 15px;
+    display: flex;
+    background: #f9f9f9;
+    position: relative;
+}
+
+.awe-activation-key-area input {
+    line-height: 45px;
+    border: 1px solid #dedede;
+    width: 100%;
+    padding-left: 25px;
+}
+.awe-activation-key-area input:focus ~ span{
+    visibility: hidden;
+}
+.awe-activation-key-area .btn {
+    padding: 15px 40px;
+    border: none;
+    background: #86E487;
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: -3px;
+}
+
+.awe-activation-key-area input:focus {
+    outline: none;
+    box-shadow: none;
+}
+.awe-activation-key-area span {
+    position: absolute;
+    top: 41px;
+    left: 20px;
+}
+/*--------------------------------------
+    // Title Style
+--------------------------------------*/
+.awe-content-title {
+    padding: 0px 20px 2px 25px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    background: #DD267B;
+    background: -moz-linear-gradient(-45deg, #DD267B 0%, #DD267B 69%);
+    background: -webkit-linear-gradient(-45deg, #DD267B 0%, #DD267B 69%);
+    background: linear-gradient(135deg, #DD267B 0%, #DD267B 69%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DD267B', endColorstr='#DD267B', GradientType=1);
+    border-radius: 3px;
+    position: relative;
+    perspective: 200px;
+    overflow: hidden;
+}
+
+.awe-content-title>* {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 11px;
+    color: #ffffff;
+    text-shadow: 3px 7px 2px rgba(255, 255, 255, .20);
+}
+
+.awe-content-title::after {
+    content: "";
+    position: absolute;
+    right: 1px;
+    height: 24px;
+    width: 24px;
+    border: 24px dashed #FFFFFF;
+    top: -2%;
+    border-radius: 50%;
+    opacity: .10;
+    box-shadow: 0px 50px 55px rgba(255, 255, 255, 1);
+    border-style: double;
+    transform-origin: right;
+}
+.awe-settings-api input {
+    padding: 0;
+    width: 500px;
+    padding-left: 25px;
+    line-height: 45px;
+}
+.awe-settings-api label {
+    font-size: 30px;
+    margin-right: 50px;
+}
