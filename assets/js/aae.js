@@ -1,38 +1,38 @@
-jQuery(document).ready(function($){
+jQuery(document).ready(function(jQuery){
 
 
 /* ========================================================================= */
 /*  Portfolio filter js
 /* ========================================================================= */ 
 
-      if($('.border').length){
+      if(jQuery('.border').length){
         //portfolio filter
         jQuery(window).load(function(){
-             $portfolio_selectors = $('.border>li>a');
-             $portfolio_selectors.on('click', function(){
-                 var selector = $(this).attr('data-filter');
+             jQueryportfolio_selectors = jQuery('.border>li>a');
+             jQueryportfolio_selectors.on('click', function(){
+                 var selector = jQuery(this).attr('data-filter');
                  return false;
              });
         });
       };
 
-      if($('.slash').length){
+      if(jQuery('.slash').length){
         //portfolio filter
         jQuery(window).load(function(){
-             $portfolio_selectors = $('.slash>li>a');
-             $portfolio_selectors.on('click', function(){
-                 var selector = $(this).attr('data-filter');
+             jQueryportfolio_selectors = jQuery('.slash>li>a');
+             jQueryportfolio_selectors.on('click', function(){
+                 var selector = jQuery(this).attr('data-filter');
                  return false;
              });
         });
       };
 
-      if($('.round').length){
+      if(jQuery('.round').length){
         //portfolio filter
         jQuery(window).load(function(){
-             $portfolio_selectors = $('.round>li>a');
-             $portfolio_selectors.on('click', function(){
-                 var selector = $(this).attr('data-filter');
+             jQueryportfolio_selectors = jQuery('.round>li>a');
+             jQueryportfolio_selectors.on('click', function(){
+                 var selector = jQuery(this).attr('data-filter');
                  return false;
              });
         });
@@ -41,8 +41,8 @@ jQuery(document).ready(function($){
 
 
       [1,2,3,4].forEach(function(i) {
-        if($('.hover-' + i).length){
-          $('.hover-'+ i).mixItUp({
+        if(jQuery('.hover-' + i).length){
+          jQuery('.hover-'+ i).mixItUp({
           });
         }
       });
@@ -53,11 +53,11 @@ jQuery(document).ready(function($){
 /* ========================================================================= */
 
     jQuery(document).ready(function(){
-      $('#hover-1 .portfolio-item').each( function() { $(this).hoverdir(); } );
+      jQuery('#hover-1 .portfolio-item').each( function() { jQuery(this).hoverdir(); } );
     });
 
-    // $(document).ready(function(){
-    //     $("a[data-rel^='lightcase']").lightcase();
+    // jQuery(document).ready(function(){
+    //     jQuery("a[data-rel^='lightcase']").lightcase();
     // });
 
 
@@ -66,12 +66,12 @@ jQuery(document).ready(function($){
 /* ========================================================================= */
 
     // Hero area auto height adjustment
-    $('#tgx-hero-unit .carousel-inner .item') .css({'height': (($(window).height()))+'px'});
-    $(window).resize(function(){
-        $('#tgx-hero-unit .carousel-inner .item') .css({'height': (($(window).height()))+'px'});
+    jQuery('#tgx-hero-unit .carousel-inner .item') .css({'height': ((jQuery(window).height()))+'px'});
+    jQuery(window).resize(function(){
+        jQuery('#tgx-hero-unit .carousel-inner .item') .css({'height': ((jQuery(window).height()))+'px'});
     });
 
-if($('.tgx-project').length){
+if(jQuery('.tgx-project').length){
   jQuery(".tgx-project").addClass("owl-carousel").owlCarousel({
         pagination: true,
         center: true,
@@ -108,6 +108,35 @@ jQuery(document).ready(function(){
     var parent = jQuery(this).parent('.noti');
     parent.fadeOut("slow", function() { jQuery(this).remove(); } );
   });
+});
+
+function closeMessage(el) {
+  el.addClass('is-hidden');
+}
+
+jQuery('.js-messageClose').on('click', function(e) {
+  closeMessage(jQuery(this).closest('.Message'));
+});
+
+jQuery('#js-helpMe').on('click', function(e) {
+  alert('Help you we will, young padawan');
+  closeMessage(jQuery(this).closest('.Message'));
+});
+
+jQuery('#js-authMe').on('click', function(e) {
+  alert('Okelidokeli, requesting data transfer.');
+  closeMessage(jQuery(this).closest('.Message'));
+});
+
+jQuery('#js-showMe').on('click', function(e) {
+  alert("Thanks For Your Interested");
+  closeMessage(jQuery(this).closest('.Message'));
+});
+
+jQuery(document).ready(function() {
+  setTimeout(function() {
+    closeMessage(jQuery('#js-timer'));
+  }, 5000);
 });
 
 

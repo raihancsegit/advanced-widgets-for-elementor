@@ -42,6 +42,49 @@ class Awe_Notifications extends Widget_Base {
 		return [ 'awe-notifications' ];
 	}
 
+	protected  function get_profile_names() {
+		return [
+				'apple' => __( 'Apple', 'aa_elementor' ),
+				'behance' => __( 'Behance', 'aa_elementor' ),
+				'bitbucket' => __( 'BitBucket', 'aa_elementor' ),
+				'codepen' => __( 'CodePen', 'aa_elementor' ),
+				'delicious' => __( 'Delicious', 'aa_elementor' ),
+				'deviantart' => __( 'DeviantArt', 'aa_elementor' ),
+				'digg' => __( 'Digg', 'aa_elementor' ),
+				'dribbble' => __( 'Dribbble', 'aa_elementor' ),
+				'email' => __( 'Email', 'aa_elementor' ),
+				'facebook' => __( 'Facebook', 'aa_elementor' ),
+				'flickr' => __( 'Flicker', 'aa_elementor' ),
+				'foursquare' => __( 'FourSquare', 'aa_elementor' ),
+				'github' => __( 'Github', 'aa_elementor' ),
+				'houzz' => __( 'Houzz', 'aa_elementor' ),
+				'instagram' => __( 'Instagram', 'aa_elementor' ),
+				'jsfiddle' => __( 'JS Fiddle', 'aa_elementor' ),
+				'linkedin' => __( 'LinkedIn', 'aa_elementor' ),
+				'medium' => __( 'Medium', 'aa_elementor' ),
+				'pinterest' => __( 'Pinterest', 'aa_elementor' ),
+				'product-hunt' => __( 'Product Hunt', 'aa_elementor' ),
+				'reddit' => __( 'Reddit', 'aa_elementor' ),
+				'slideshare' => __( 'Slide Share', 'aa_elementor' ),
+				'snapchat' => __( 'Snapchat', 'aa_elementor' ),
+				'soundcloud' => __( 'SoundCloud', 'aa_elementor' ),
+				'spotify' => __( 'Spotify', 'aa_elementor' ),
+				'stack-overflow' => __( 'StackOverflow', 'aa_elementor' ),
+				'tripadvisor' => __( 'TripAdvisor', 'aa_elementor' ),
+				'tumblr' => __( 'Tumblr', 'aa_elementor' ),
+				'twitch' => __( 'Twitch', 'aa_elementor' ),
+				'twitter' => __( 'Twitter', 'aa_elementor' ),
+				'vimeo' => __( 'Vimeo', 'aa_elementor' ),
+				'vk' => __( 'VK', 'aa_elementor' ),
+				'website' => __( 'Website', 'aa_elementor' ),
+				'whatsapp' => __( 'WhatsApp', 'aa_elementor' ),
+				'wordpress' => __( 'WordPress', 'aa_elementor' ),
+				'xing' => __( 'Xing', 'aa_elementor' ),
+				'yelp' => __( 'Yelp', 'aa_elementor' ),
+				'youtube' => __( 'YouTube', 'aa_elementor' ),
+		];
+}
+
 	protected function _register_controls() {
 		
 		$this->start_controls_section(
@@ -62,7 +105,8 @@ class Awe_Notifications extends Widget_Base {
                 'type'    => Controls_Manager::SELECT,
                 'default' => 'style1',
                 'options' => [
-                    'style1' => __( 'Style 1', ' aw_elementor' ),
+										'style1' => __( 'Style 1', ' aw_elementor' ),
+										'style2' => __( 'Style 2', ' aw_elementor' ),
                 ],
             ]
         );
@@ -76,6 +120,9 @@ class Awe_Notifications extends Widget_Base {
 						'placeholder' => __( 'Enter your pre title', ' aw_elementor' ),
 						'default'     => __( 'Success', ' aw_elementor' ),
 						'label_block' => true,
+						'condition'   => [
+							'style' => [ 'style1'],
+							],
 					]
 			);
 
@@ -87,10 +134,86 @@ class Awe_Notifications extends Widget_Base {
 							'placeholder' => __( 'Enter your sub title', ' aw_elementor' ),
 							'default'     => __( 'Anyone with access can view your invited visitors.', ' aw_elementor' ),
 							'label_block' => true,
+							'condition'   => [
+								'style' => [ 'style1'],
+								],
 						]
 			);
+
+			$this->add_control(
+				'text_content',
+						[
+							'label'       => __( 'Content', ' aw_elementor' ),
+							'type'        => Controls_Manager::TEXTAREA,
+							'placeholder' => __( 'Enter your sub title', ' aw_elementor' ),
+							'default'     => __( 'Do you know that you can assign status and relation to a company right in the visit list?', ' aw_elementor' ),
+							'label_block' => true,
+							'condition'   => [
+								'style' => [ 'style2'],
+								],
+						]
+			);
+
+			$this->add_control(
+				'icon',
+						[
+							'label'       => __( 'Icon', 'aa_elementor' ),
+							'type'        => Controls_Manager::ICON,
+							'label_block' => true,
+							'default'     => 'fa fa-exclamation-triangle',
+							'condition'   => [
+								'style' => [ 'style1','style2'],
+								],
+						]
+				);
         
 	$this->end_controls_section();
+
+		$this->start_controls_section(
+			'_section_btns',
+			[
+					'label' => __( 'Button', ' aw_elementor' ),
+					'tab'   => Controls_Manager::TAB_CONTENT,
+					'condition'   => [
+						'style' => ['style2'],
+						],
+			]
+		);
+
+		$this->add_control(
+			'button_text',
+			[
+					'label'       => __( 'Button Text', 'aa_elementor' ),
+					'type'        => Controls_Manager::TEXT,
+					'default'     => __( 'Interested', 'aa_elementor' ),
+					'placeholder' => __( 'Type button text here', 'aa_elementor' ),
+					'label_block' => true,
+			]
+	);
+
+	$this->add_control(
+			'button_link',
+			[
+					'label'       => __( 'Link', 'aa_elementor' ),
+					'type'        => Controls_Manager::URL,
+					'placeholder' => __( 'https://example.com/', 'aa_elementor' ),
+			]
+	);
+
+	$this->add_control(
+			'button_text2',
+			[
+					'label'       => __( 'Button Text Close', 'aa_elementor' ),
+					'type'        => Controls_Manager::TEXT,
+					'default'     => __( 'No, not interested', 'aa_elementor' ),
+					'placeholder' => __( 'Type button text here', 'aa_elementor' ),
+					'label_block' => true,
+					
+			]
+	);
+
+
+		$this->end_controls_section();
 				
 				$this->start_controls_section(
 					'_section_style_common',
@@ -163,6 +286,9 @@ class Awe_Notifications extends Widget_Base {
 					[
 							'label' => __( 'Border Right', ' aw_elementor' ),
 							'tab'   => Controls_Manager::TAB_STYLE,
+							'condition'   => [
+								'style' => ['style1'],
+								],
 					]
 			);
 
@@ -197,6 +323,9 @@ class Awe_Notifications extends Widget_Base {
 					[
 							'label' => __( 'Title Style', ' aw_elementor' ),
 							'tab'   => Controls_Manager::TAB_STYLE,
+							'condition'   => [
+								'style' => ['style1'],
+								],
 					]
 		);
 			
@@ -227,11 +356,14 @@ class Awe_Notifications extends Widget_Base {
 		
 		$this->start_controls_section(
 			'_section_style_content',
-			[
-					'label' => __( 'Content Style', ' aw_elementor' ),
-					'tab'   => Controls_Manager::TAB_STYLE,
-			]
-);
+					[
+							'label' => __( 'Content Style', ' aw_elementor' ),
+							'tab'   => Controls_Manager::TAB_STYLE,
+							'condition'   => [
+								'style' => ['style1'],
+								],
+					]
+		);
 	
 		$this->add_responsive_control(
 			'content_color',
@@ -255,6 +387,44 @@ class Awe_Notifications extends Widget_Base {
 				]
 		);
 	
+
+$this->end_controls_section();
+
+$this->start_controls_section(
+	'_section_style_icon',
+			[
+					'label' => __( 'Icon Style', ' aw_elementor' ),
+					'tab'   => Controls_Manager::TAB_STYLE,
+			]
+);
+
+$this->add_responsive_control(
+	'icon_color',
+			[
+					'label'      => __( 'Icon Color', ' aw_elementor' ),
+					'type'       => Controls_Manager::COLOR,
+					'size_units' => [ 'px', '%' ],
+					'selectors'  => [
+							'{{WRAPPER}} .awe-icon i' =>'color: {{VALUE}} !important',
+					]
+			]
+	);
+
+	$this->add_responsive_control(
+		'icon_bg_color',
+				[
+						'label'      => __( 'Icon BG Color', ' aw_elementor' ),
+						'type'       => Controls_Manager::COLOR,
+						'size_units' => [ 'px', '%' ],
+						'selectors'  => [
+								'{{WRAPPER}} .awe-icon' =>'background: {{VALUE}} !important',
+						],
+						'condition'   => [
+							'style' => ['style2'],
+							],
+				]
+		);
+
 
 $this->end_controls_section();
 		
