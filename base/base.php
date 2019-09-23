@@ -56,6 +56,7 @@ class Advanced_Widgets_For_Elementor {
           'widget-notifications',
           'widget-glow-text-effects',
           'widget-cards',
+          'widget-text-animation'
 
       ];
 
@@ -76,6 +77,11 @@ class Advanced_Widgets_For_Elementor {
         // cards Elements
         if( $check_component_active['widget-cards'] ) {
           require_once AWE_PATH . '/modules/cards/widget.php';
+        }
+
+        // Text animation Elements
+        if( $check_component_active['widget-text-animation'] ) {
+          require_once AWE_PATH . '/modules/text-animation/widget.php';
         }
        
       // helper functions

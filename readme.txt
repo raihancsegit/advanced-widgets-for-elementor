@@ -1,6 +1,6 @@
 === Advanced Addons for Elementor ===
 Plugin Name: Advanced Addons for Elementor
-Version: 1.0.2
+Version: 1.0.0
 Author: Advanced Addons
 Author URI: https://advancedaddons.com/
 Contributors: B-07, advancedaddons

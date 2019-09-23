@@ -5,7 +5,7 @@ function awe_for_elementor_init(){
     Plugin::instance()->elements_manager->add_category(
         'awe_elementor',
         [
-            'title'  => esc_html__('Advanced Addons', ' aw_elementor'),
+            'title'  => esc_html__('Advanced Widgets', ' aw_elementor'),
             'icon'   => 'eicon-font'
         ],
         1

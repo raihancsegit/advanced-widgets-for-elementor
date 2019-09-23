@@ -3,7 +3,7 @@
  * Plugin Name: Advanced Widgets for Elementor
  * Plugin URI: https://advancedwidgets.com/elementor
  * Description: The most advanced collection of Elementor page builder widgets.
- * Version: 1.0.3
+ * Version: 1.0.0
  * Author: Advanced Widgets
  * Author URI: https://advancedwidgets.com/
  * License: GPLv2
@@ -21,7 +21,7 @@
     // Define absoulote path
     if( !defined( 'ABSPATH' ) ) exit; // No access of directly access
 
-    define( 'AWE_VERSION', '1.0.3' );
+    define( 'AWE_VERSION', '1.0.0' );
     // Define file
     define('AWE_FILE', __FILE__);
     // Define url

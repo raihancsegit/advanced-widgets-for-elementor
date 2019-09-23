@@ -7,6 +7,7 @@ class Awe_Admin {
         'widget-notifications',
         'widget-glow-text-effects',
         'widget-cards',
+        'widget-text-animation',
         'maps-api',
         'facebook_app_id',
     ];
@@ -33,7 +34,7 @@ class Awe_Admin {
 	function awe_for_elementor_admin_options(){
 	    add_menu_page( 
 	        'Admin Menu',
-	        __( 'Advanced Addons', ' aw_elementor' ),
+	        __( 'Advanced Widgets', ' aw_elementor' ),
 	        'manage_options',
 	        'awe-settings',
 	        array($this, 'display_settings_pages'),
@@ -223,6 +224,23 @@ function awe_for_elementor_admin_get_param_check(){
                                 </div>
                             </div>
 
+                            <div class="col">
+                                <div class="awe-widget-box">
+                                    <div class="awe-widget-box-title">
+                                        <?php echo esc_html__('Text Animations', ' aw_elementor'); ?>
+                                       <a href="#" class="awe-settings-preview" title="Preview">
+                                            <span class="dashicons dashicons-visibility"></span>
+                                        </a>
+                                    </div>
+                                   <div class="awe-widget-box-content">
+                                        <label class="switch">
+                                            <input type="checkbox" id="widget-text-animation" name="widget-text-animation" <?php checked(1, $this->awe_get_settings['widget-text-animation'], true) ?>>
+                                            <span class="rectangle round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
                             
                            
                             
@@ -337,6 +355,7 @@ function awe_for_elementor_admin_get_param_check(){
         $this->awe_settings = array(
             'widget-notifications'                 => intval( $settings['widget-notifications'] ? 1 : 0 ),
             'widget-glow-text-effects'             => intval( $settings['widget-glow-text-effects'] ? 1 : 0 ),
+            'widget-text-animation'                => intval( $settings['widget-text-animation'] ? 1 : 0 ),
             'widget-cards'                         => intval( $settings['widget-cards'] ? 1 : 0 ),
             'maps-api'               =>  $settings['maps-api'] ? $settings['maps-api'] : 0 ,
             'facebook_app_id'        =>  $settings['facebook_app_id'] ? $settings['facebook_app_id'] : 0 ,
