@@ -54,6 +54,8 @@ class Advanced_Widgets_For_Elementor {
   function awe_for_elementor_widget_bundle(){
     $awe_elements_keys = [
           'widget-notifications',
+          'widget-glow-text-effects',
+          'widget-cards',
 
       ];
 
@@ -64,6 +66,16 @@ class Advanced_Widgets_For_Elementor {
         // notifications Elements
         if( $check_component_active['widget-notifications'] ) {
             require_once AWE_PATH . '/modules/notifications/widget.php';
+        }
+
+         // glow-text-effects Elements
+         if( $check_component_active['widget-glow-text-effects'] ) {
+          require_once AWE_PATH . '/modules/glow-text-effects/widget.php';
+        }
+
+        // cards Elements
+        if( $check_component_active['widget-cards'] ) {
+          require_once AWE_PATH . '/modules/cards/widget.php';
         }
        
       // helper functions

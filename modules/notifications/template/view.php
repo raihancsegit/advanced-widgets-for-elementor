@@ -4,6 +4,8 @@ $this->add_inline_editing_attributes( 'title', 'none' );
 $this->add_render_attribute( 'title', 'class', 'noti__type awe-alert-title' );
 $this->add_inline_editing_attributes( 'subtitle', 'none' );
 $this->add_render_attribute( 'subtitle', 'class', 'noti__message awe-alert-subtitle' );
+$this->add_inline_editing_attributes( 'text_content', 'none' );
+$this->add_render_attribute( 'text_content', 'class', 'awe-noti-textcontent' );
 ?>
 <?php if($settings['style'] === 'style1'):?>
        

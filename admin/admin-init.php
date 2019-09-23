@@ -5,6 +5,8 @@ class Awe_Admin {
 
      public $awe_elements_keys = [
         'widget-notifications',
+        'widget-glow-text-effects',
+        'widget-cards',
         'maps-api',
         'facebook_app_id',
     ];
@@ -186,6 +188,43 @@ function awe_for_elementor_admin_get_param_check(){
                             </div>
                             <!--  -->
 
+                            <div class="col">
+                                <div class="awe-widget-box">
+                                    <div class="awe-widget-box-title">
+                                        <?php echo esc_html__('Glow Text Effects', ' aw_elementor'); ?>
+                                       <a href="#" class="awe-settings-preview" title="Preview">
+                                            <span class="dashicons dashicons-visibility"></span>
+                                        </a>
+                                    </div>
+                                   <div class="awe-widget-box-content">
+                                        <label class="switch">
+                                            <input type="checkbox" id="widget-glow-text-effects" name="widget-glow-text-effects" <?php checked(1, $this->awe_get_settings['widget-glow-text-effects'], true) ?>>
+                                            <span class="rectangle round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+
+                            <div class="col">
+                                <div class="awe-widget-box">
+                                    <div class="awe-widget-box-title">
+                                        <?php echo esc_html__('Cards', ' aw_elementor'); ?>
+                                       <a href="#" class="awe-settings-preview" title="Preview">
+                                            <span class="dashicons dashicons-visibility"></span>
+                                        </a>
+                                    </div>
+                                   <div class="awe-widget-box-content">
+                                        <label class="switch">
+                                            <input type="checkbox" id="widget-cards" name="widget-cards" <?php checked(1, $this->awe_get_settings['widget-cards'], true) ?>>
+                                            <span class="rectangle round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                           
                             
                         </div>
                         <!-- row -->
@@ -296,7 +335,9 @@ function awe_for_elementor_admin_get_param_check(){
         }
 
         $this->awe_settings = array(
-            'widget-notifications'             => intval( $settings['widget-notifications'] ? 1 : 0 ),
+            'widget-notifications'                 => intval( $settings['widget-notifications'] ? 1 : 0 ),
+            'widget-glow-text-effects'             => intval( $settings['widget-glow-text-effects'] ? 1 : 0 ),
+            'widget-cards'                         => intval( $settings['widget-cards'] ? 1 : 0 ),
             'maps-api'               =>  $settings['maps-api'] ? $settings['maps-api'] : 0 ,
             'facebook_app_id'        =>  $settings['facebook_app_id'] ? $settings['facebook_app_id'] : 0 ,
         );

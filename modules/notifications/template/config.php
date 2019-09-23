@@ -391,6 +391,42 @@ class Awe_Notifications extends Widget_Base {
 $this->end_controls_section();
 
 $this->start_controls_section(
+	'_section_style_text',
+			[
+					'label' => __( 'Content Style', ' aw_elementor' ),
+					'tab'   => Controls_Manager::TAB_STYLE,
+					'condition'   => [
+						'style' => ['style2'],
+						],
+			]
+);
+
+$this->add_responsive_control(
+	'text_color',
+			[
+					'label'      => __( 'Content Color', ' aw_elementor' ),
+					'type'       => Controls_Manager::COLOR,
+					'size_units' => [ 'px', '%' ],
+					'selectors'  => [
+							'{{WRAPPER}} .awe-noti-textcontent' =>'color: {{VALUE}} !important',
+					]
+			]
+	);
+
+	$this->add_group_control(
+		Group_Control_Typography:: get_type(),
+		[
+				'name'     => 'text_typography',
+				'label'    => __( 'Title Typography', ' aw_elementor' ),
+				'selector' => '{{WRAPPER}} .awe-noti-textcontent',
+				'scheme'   => Scheme_Typography::TYPOGRAPHY_4,
+		]
+);
+
+
+$this->end_controls_section();
+
+$this->start_controls_section(
 	'_section_style_icon',
 			[
 					'label' => __( 'Icon Style', ' aw_elementor' ),
@@ -425,6 +461,116 @@ $this->add_responsive_control(
 				]
 		);
 
+
+$this->end_controls_section();
+
+$this->start_controls_section(
+	'_section_style_button',
+			[
+					'label'       => __( 'Button Style', ' aw_elementor' ),
+					'tab'         => Controls_Manager::TAB_STYLE,
+					'condition'   => [
+						'style' => ['style2'],
+						],
+			]
+);
+
+$this->add_group_control(
+	Group_Control_Border:: get_type(),
+	[
+			'name'     => 'links_borders',
+			'selector' => '{{WRAPPER}} .Message-button'
+	]
+);
+
+$this->add_responsive_control(
+	'links_border_radius',
+	[
+			'label'      => __( 'Border Radius', 'aa_elementor' ),
+			'type'       => Controls_Manager::DIMENSIONS,
+			'size_units' => [ 'px', '%' ],
+			'selectors'  => [
+					'{{WRAPPER}} .Message-button' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+			],
+	]
+);
+
+$this->start_controls_tabs( '_tab_links_colors' );
+$this->start_controls_tab(
+	'_tab_links_normal',
+	[
+			'label' => __( 'Normal', 'aa_elementor' ),
+	]
+);
+
+$this->add_control(
+	'links_color',
+	[
+			'label'     => __( 'Text Color', 'aa_elementor' ),
+			'type'      => Controls_Manager::COLOR,
+			'selectors' => [
+					'{{WRAPPER}} .Message-button' => 'color: {{VALUE}}',
+			],
+	]
+);
+
+$this->add_control(
+	'links_bg_color',
+	[
+			'label'     => __( 'Background Color', 'aa_elementor' ),
+			'type'      => Controls_Manager::COLOR,
+			'selectors' => [
+					'{{WRAPPER}} .Message-button' => 'background-color: {{VALUE}} !important',
+			],
+	]
+);
+
+$this->end_controls_tab();
+$this->start_controls_tab(
+	'_tab_links_hover',
+	[
+			'label' => __( 'Hover', 'aa_elementor' ),
+	]
+);
+
+$this->add_control(
+	'links_hover_color',
+	[
+			'label'     => __( 'Text Color', 'aa_elementor' ),
+			'type'      => Controls_Manager::COLOR,
+			'selectors' => [
+					'{{WRAPPER}} .Message-body a:hover, {{WRAPPER}} .Message-body a:focus' => 'color: {{VALUE}}',
+			],
+	]
+);
+
+$this->add_control(
+	'links_hover_bg_color',
+	[
+			'label'     => __( 'Background Color', 'aa_elementor' ),
+			'type'      => Controls_Manager::COLOR,
+			'selectors' => [
+					'{{WRAPPER}} .Message-body a:hover, {{WRAPPER}} .Message-body a:focus' => 'background-color: {{VALUE}} !important',
+			],
+	]
+);
+
+$this->add_control(
+	'links_hover_border_color',
+	[
+			'label'     => __( 'Border Color', 'aa_elementor' ),
+			'type'      => Controls_Manager::COLOR,
+			'selectors' => [
+					'{{WRAPPER}} .Message-body a:hover, {{WRAPPER}} .Message-body a:focus' => 'border-color: {{VALUE}};',
+			],
+			'condition' => [
+					'links_border_border!' => '',
+			]
+	]
+);
+
+$this->end_controls_tab();
+$this->end_controls_tabs();
 
 $this->end_controls_section();
 		
