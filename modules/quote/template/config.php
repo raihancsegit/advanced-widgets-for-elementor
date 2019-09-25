@@ -20,18 +20,18 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  *
  * @since 1.0.0
  */
-class Awe_Cards extends Widget_Base {
+class Quote extends Widget_Base {
 
 	public function get_name() {
-		return 'awe-cards';
+		return 'awe-quote';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Cards', ' aw_elementor' );
+		return esc_html__( 'Quote', ' aw_elementor' );
 	}
 
 	public function get_icon() {
-		return 'ad ad-injection';
+		return 'ad ad-quote';
 	}
 
 	public function get_categories() {
@@ -43,7 +43,7 @@ class Awe_Cards extends Widget_Base {
 	 * @since 1.3.0
 	 **/
 	public function get_script_depends() {
-		return [ 'awe-cards' ];
+		return [ 'awe-quote' ];
 	}
 
 	protected  function get_profile_names() {
@@ -94,7 +94,7 @@ class Awe_Cards extends Widget_Base {
 		$this->start_controls_section(
 			'_section_info',
 			[
-				'label' => __( 'Glow Text', ' aw_elementor' ),
+				'label' => __( 'Quote', ' aw_elementor' ),
 				'tab'   => Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -125,68 +125,98 @@ class Awe_Cards extends Widget_Base {
 							'default'     => __( 'Title', ' aw_elementor' ),
 							'label_block' => true,
 							'condition'   => [
-								'style' => [ 'style1','style2'],
+								'style' => [ 'style1'],
 								],
 						]
 			);
 
 			$this->add_control(
-				'sub_title',
-						[
-							'label'       => __( 'Sub Title', ' aw_elementor' ),
-							'type'        => Controls_Manager::TEXT,
-							'placeholder' => __( 'Enter Subtitle', ' aw_elementor' ),
-							'default'     => __( 'Subtitle', ' aw_elementor' ),
-							'label_block' => true,
-							'condition'   => [
-								'style' => [ 'style1'],
-								],
-						]
-			);
+				'first_content',
+					[
+						'label'       => __( 'First Content', ' aw_elementor' ),
+						'type'        => Controls_Manager::TEXT,
+						'placeholder' => __( 'Enter First Content', ' aw_elementor' ),
+						'default'     => __( 'Intuitive design happens when', ' aw_elementor' ),
+						'label_block' => true,
+						'condition'   => [
+							'style' => [ 'style2'],
+							],
+					]
+		);
+
+		$this->add_control(
+			'second_content',
+				[
+					'label'       => __( 'Second Content', ' aw_elementor' ),
+					'type'        => Controls_Manager::TEXT,
+					'placeholder' => __( 'Enter Second Content', ' aw_elementor' ),
+					'default'     => __( 'current knowledge is the same as the', ' aw_elementor' ),
+					'label_block' => true,
+					'condition'   => [
+						'style' => [ 'style2'],
+						],
+				]
+	);
+
+	$this->add_control(
+		'third_content',
+			[
+				'label'       => __( 'Third Content', ' aw_elementor' ),
+				'type'        => Controls_Manager::TEXT,
+				'placeholder' => __( 'Enter Third Content', ' aw_elementor' ),
+				'default'     => __( 'target knowledge', ' aw_elementor' ),
+				'label_block' => true,
+				'condition'   => [
+					'style' => [ 'style2'],
+					],
+			]
+);
+
+$this->add_control(
+	'author',
+		[
+			'label'       => __( 'Author', ' aw_elementor' ),
+			'type'        => Controls_Manager::TEXT,
+			'placeholder' => __( 'Enter Author', ' aw_elementor' ),
+			'default'     => __( '—Jared Spool', ' aw_elementor' ),
+			'label_block' => true,
+			'condition'   => [
+				'style' => [ 'style2'],
+				],
+		]
+);
+
+$this->add_control(
+	'position',
+		[
+			'label'       => __( 'Position', ' aw_elementor' ),
+			'type'        => Controls_Manager::TEXT,
+			'placeholder' => __( 'Enter Position', ' aw_elementor' ),
+			'default'     => __( 'Web Site Usability: A Designers Guide', ' aw_elementor' ),
+			'label_block' => true,
+			'condition'   => [
+				'style' => [ 'style2'],
+				],
+		]
+);
+
+
+			
 			$this->add_control(
 				'content',
 						[
-							'label'       => __( 'Sub Title', ' aw_elementor' ),
+							'label'       => __( 'Content', ' aw_elementor' ),
 							'type'        => Controls_Manager::TEXTAREA,
 							'placeholder' => __( 'Enter Content', ' aw_elementor' ),
 							'default'     => __( 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor praesentium at quod autem omnis', ' aw_elementor' ),
 							'label_block' => true,
 							'condition'   => [
-								'style' => [ 'style2'],
-								],
-						]
-			);
-			$this->add_control(
-				'image',
-				[
-						'label'   => __( 'Image', 'aw_elementor' ),
-						'type'    => Controls_Manager::MEDIA,
-						'default' => [
-								'url' => Utils::get_placeholder_image_src(),
-						],
-						'condition'   => [
-							'style' => [ 'style2'],
-							],
-					 
-				]
-		);
-			$this->add_control(
-				'link',
-						[
-							'label'   => __( 'Link', 'aw_elementor' ),
-							'type'    => Controls_Manager::URL,
-							'dynamic' => [
-								'active' => true,
-							],
-							'placeholder' => __( 'https://your-link.com', 'aw_elementor' ),
-							'default'     => [
-								'url' => '#',
-							],
-							'condition'   => [
 								'style' => [ 'style1'],
 								],
 						]
-					);
+			);
+			
+		
 
 			$this->add_responsive_control(
 				'align',
@@ -214,7 +244,10 @@ class Awe_Cards extends Widget_Base {
 						'toggle'    => true,
 						'selectors' => [
 								'{{WRAPPER}}' => 'text-align: {{VALUE}}'
-						]
+						],
+						'condition'   => [
+							'style' => [ 'style1'],
+							],
 				]
 		);
 
@@ -263,6 +296,9 @@ $this->start_controls_section(
 		[
 				'label' => __( 'Common Style', ' aw_elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
+				'condition'   => [
+					'style' => [ 'style1'],
+					],
 		]
 );
 
@@ -273,7 +309,7 @@ $this->start_controls_section(
 							'type'       => Controls_Manager::DIMENSIONS,
 							'size_units' => ['px', 'em', '%'],
 							'selectors'  => [
-									'{{WRAPPER}} .awe-cards' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+									'{{WRAPPER}} .quote-con' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 							],
 					]
 		);
@@ -285,7 +321,7 @@ $this->start_controls_section(
 						'type'       => Controls_Manager::DIMENSIONS,
 						'size_units' => ['px', 'em', '%'],
 						'selectors'  => [
-								'{{WRAPPER}} .awe-cards' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+								'{{WRAPPER}} .quote-con' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 						],
 				]
 		);
@@ -295,7 +331,7 @@ $this->start_controls_section(
 					'name' => 'p_background',
 					'label' => __( 'Background Color', ' aw_elementor' ),
 					'types' => [ 'classic', 'gradient'],
-					'selector' => '{{WRAPPER}} .awe-cards',
+					'selector' => '{{WRAPPER}} .quote1 .text',
 					'condition'   => [
 						'style' => [ 'style1'],
 						],
@@ -307,7 +343,7 @@ $this->start_controls_section(
 			Group_Control_Border:: get_type(),
 			[
 					'name'     => 'links_border',
-					'selector' => '{{WRAPPER}} .awe-cards',
+					'selector' => '{{WRAPPER}} .quote1 .text',
 					'condition'   => [
 						'style' => [ 'style1'],
 						],
@@ -321,7 +357,7 @@ $this->start_controls_section(
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%' ],
 					'selectors'  => [
-							'{{WRAPPER}} .awe-cards' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+							'{{WRAPPER}} .quote1 .text' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 					'condition'   => [
 						'style' => [ 'style1'],
@@ -336,6 +372,9 @@ $this->start_controls_section(
 		[
 				'label' => __( 'Title Style', ' aw_elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
+				'condition'   => [
+					'style' => [ 'style1'],
+					],
 		]
 );
 
@@ -345,7 +384,7 @@ $this->start_controls_section(
 								'label'     => __( 'Title Color', 'aw_elementor' ),
 								'type'      => Controls_Manager::COLOR,
 								'selectors' => [
-										'{{WRAPPER}} .awe-card-title' => 'color: {{VALUE}}',
+										'{{WRAPPER}} .awe-quote-title' => 'color: {{VALUE}}',
 								],
 						]
 			);
@@ -357,7 +396,7 @@ $this->start_controls_section(
 						'type'       => Controls_Manager::SLIDER,
 						'size_units' => ['px'],
 						'selectors'  => [
-								'{{WRAPPER}} .awe-card-title' => 'margin-bottom: {{SIZE}}{{UNIT}} !important;',
+								'{{WRAPPER}} .awe-quote-title' => 'margin-bottom: {{SIZE}}{{UNIT}} !important;',
 						],
 				]
 		);
@@ -366,7 +405,7 @@ $this->start_controls_section(
 					Group_Control_Typography:: get_type(),
 							[
 									'name'     => 'title_typography',
-									'selector' => '{{WRAPPER}} .awe-card-title',
+									'selector' => '{{WRAPPER}} .awe-quote-title',
 									'scheme'   => Scheme_Typography::TYPOGRAPHY_2,
 							]
 					);
@@ -376,7 +415,7 @@ $this->end_controls_section();
 $this->start_controls_section(
 	'_section_style_subtitle',
 		[
-				'label' => __( 'SubTitle Style', ' aw_elementor' ),
+				'label' => __( 'Content Style', ' aw_elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 				'condition'   => [
 					'style' => [ 'style1'],
@@ -387,10 +426,10 @@ $this->start_controls_section(
 			$this->add_control(
 				'subtitle_color',
 						[
-								'label'     => __( 'SubTitle Color', 'aw_elementor' ),
+								'label'     => __( 'Content Color', 'aw_elementor' ),
 								'type'      => Controls_Manager::COLOR,
 								'selectors' => [
-										'{{WRAPPER}} .awe-card-subtitle' => 'color: {{VALUE}}',
+										'{{WRAPPER}} .awe-quote-content' => 'color: {{VALUE}}',
 								],
 						]
 			);
@@ -400,42 +439,7 @@ $this->start_controls_section(
 					Group_Control_Typography:: get_type(),
 							[
 									'name'     => 'subtitle_typography',
-									'selector' => '{{WRAPPER}} .awe-card-subtitle',
-									'scheme'   => Scheme_Typography::TYPOGRAPHY_2,
-							]
-					);
-
-$this->end_controls_section();
-
-
-$this->start_controls_section(
-	'_section_style_content',
-		[
-				'label' => __( 'Content Style', ' aw_elementor' ),
-				'tab'   => Controls_Manager::TAB_STYLE,
-				'condition'   => [
-					'style' => [ 'style2'],
-					],
-		]
-);
-
-			$this->add_control(
-				'content_color',
-						[
-								'label'     => __( 'Content Color', 'aw_elementor' ),
-								'type'      => Controls_Manager::COLOR,
-								'selectors' => [
-										'{{WRAPPER}} .awe-card-content' => 'color: {{VALUE}}',
-								],
-						]
-			);
-
-
-			$this->add_group_control(
-					Group_Control_Typography:: get_type(),
-							[
-									'name'     => 'content_typography',
-									'selector' => '{{WRAPPER}} .awe-card-content',
+									'selector' => '{{WRAPPER}} .awe-quote-content',
 									'scheme'   => Scheme_Typography::TYPOGRAPHY_2,
 							]
 					);
@@ -459,21 +463,260 @@ $this->start_controls_section(
 								'label'     => __( 'Icon Color', 'aw_elementor' ),
 								'type'      => Controls_Manager::COLOR,
 								'selectors' => [
-										'{{WRAPPER}} .awe-card-icon' => 'color: {{VALUE}}',
+										'{{WRAPPER}} .quote-con i' => 'color: {{VALUE}}',
 								],
 						]
 			);
 
 $this->end_controls_section();
 
+$this->start_controls_section(
+	'_section_style_borders',
+		[
+				'label' => __( 'Border Style', ' aw_elementor' ),
+				'tab'   => Controls_Manager::TAB_STYLE,
+				'condition'   => [
+					'style' => [ 'style1'],
+					],
+		]
+);
+
+		$this->add_group_control(
+			Group_Control_Border:: get_type(),
+			[
+					'name'     => 'border_top',
+					'selector' => '{{WRAPPER}} .quote1:after,.quote1:before',
+			]
+		);
+
+		$this->add_responsive_control(
+		'border_top_radius',
+			[
+					'label'      => __( 'Border Radius', ' aw_elementor' ),
+					'type'       => Controls_Manager::DIMENSIONS,
+					'size_units' => [ 'px', '%' ],
+					'selectors'  => [
+							'{{WRAPPER}} .quote1:after,.quote1:before' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					],
+				
+			]
+		);
+
+$this->end_controls_section();
+
+$this->start_controls_section(
+	'_section_style2_common',
+		[
+				'label' => __( 'Common Style', ' aw_elementor' ),
+				'tab'   => Controls_Manager::TAB_STYLE,
+				'condition'   => [
+					'style' => [ 'style2'],
+					],
+		]
+);
+
+$this->add_responsive_control(
+	'padding2',
+			[
+					'label'      => __( 'Padding', ' aw_elementor'),
+					'type'       => Controls_Manager::DIMENSIONS,
+					'size_units' => ['px', 'em', '%'],
+					'selectors'  => [
+							'{{WRAPPER}} .blockquote h1' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					],
+			]
+);
+
+$this->add_responsive_control(
+'margin2',
+		[
+				'label'      => __( 'Margin', ' aw_elementor'),
+				'type'       => Controls_Manager::DIMENSIONS,
+				'size_units' => ['px', 'em', '%'],
+				'selectors'  => [
+						'{{WRAPPER}} .blockquote h1' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+		]
+);
+$this->add_group_control(
+	Group_Control_Background::get_type(),
+	[
+			'name' => 'p_background2',
+			'label' => __( 'Background Color', ' aw_elementor' ),
+			'types' => [ 'classic', 'gradient'],
+			'selector' => '{{WRAPPER}} .blockquote h1',
+			
+	]
+);
+
+
+$this->add_group_control(
+	Group_Control_Border:: get_type(),
+	[
+			'name'     => 'links_border2',
+			'selector' => '{{WRAPPER}} .blockquote h1',
+			
+			
+	]
+);
+
+$this->add_responsive_control(
+'border_radius2',
+	[
+			'label'      => __( 'Border Radius', ' aw_elementor' ),
+			'type'       => Controls_Manager::DIMENSIONS,
+			'size_units' => [ 'px', '%' ],
+			'selectors'  => [
+					'{{WRAPPER}} .blockquote h1' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+			],
+			
+	]
+);
+
+$this->end_controls_section();
+$this->start_controls_section(
+	'_section_style2_quote',
+		[
+				'label' => __( 'Quote After Style', ' aw_elementor' ),
+				'tab'   => Controls_Manager::TAB_STYLE,
+				'condition'   => [
+					'style' => [ 'style2'],
+					],
+		]
+);
+
+$this->add_control(
+	'after_color',
+			[
+					'label'     => __( 'After Border Color', 'aw_elementor' ),
+					'type'      => Controls_Manager::COLOR,
+					'selectors' => [
+							'{{WRAPPER}} .blockquote h1:after' => 'border-color: {{VALUE}}',
+					],
+			]
+);
+
+$this->add_control(
+	'after_width',
+			[
+					'label'     => __( 'After Border Width', 'aw_elementor' ),
+					'type'      => Controls_Manager::NUMBER,
+					'selectors' => [
+							'{{WRAPPER}} .blockquote h1:after' => 'border-width: {{VALUE}}px',
+					],
+			]
+);
+
+$this->end_controls_section();
+
+$this->start_controls_section(
+	'_section_style2_text',
+		[
+				'label' => __( 'Text Style', ' aw_elementor' ),
+				'tab'   => Controls_Manager::TAB_STYLE,
+				'condition'   => [
+					'style' => [ 'style2'],
+					],
+		]
+);
+
+$this->add_control(
+	'first_content_color',
+			[
+					'label'     => __( 'Firts Content Color', 'aw_elementor' ),
+					'type'      => Controls_Manager::COLOR,
+					'selectors' => [
+							'{{WRAPPER}} .first' => 'color: {{VALUE}}',
+					],
+			]
+);
+
+$this->add_group_control(
+	Group_Control_Typography:: get_type(),
+			[
+					'name'     => 'first_typography',
+					'selector' => '{{WRAPPER}} .first',
+					'scheme'   => Scheme_Typography::TYPOGRAPHY_2,
+			]
+	);
+
+$this->add_control(
+	'second_content_color',
+			[
+					'label'     => __( 'Second Content Color', 'aw_elementor' ),
+					'type'      => Controls_Manager::COLOR,
+					'selectors' => [
+							'{{WRAPPER}} .changecolor' => 'color: {{VALUE}}',
+					],
+			]
+);
+$this->add_group_control(
+	Group_Control_Typography:: get_type(),
+			[
+					'name'     => 'second_typography',
+					'selector' => '{{WRAPPER}} .changecolor',
+					'scheme'   => Scheme_Typography::TYPOGRAPHY_2,
+			]
+	);
+
+$this->add_control(
+	'third_content_color',
+			[
+					'label'     => __( 'third Content Color', 'aw_elementor' ),
+					'type'      => Controls_Manager::COLOR,
+					'selectors' => [
+							'{{WRAPPER}} .third' => 'color: {{VALUE}}',
+					],
+			]
+);
+$this->add_group_control(
+	Group_Control_Typography:: get_type(),
+			[
+					'name'     => 'third_typography',
+					'selector' => '{{WRAPPER}} .third',
+					'scheme'   => Scheme_Typography::TYPOGRAPHY_2,
+			]
+	);
+
+$this->end_controls_section();
+
+$this->start_controls_section(
+	'_section_style2_author',
+		[
+				'label' => __( 'Author Style', ' aw_elementor' ),
+				'tab'   => Controls_Manager::TAB_STYLE,
+				'condition'   => [
+					'style' => [ 'style2'],
+					],
+		]
+);
+$this->add_control(
+	'author_color',
+			[
+					'label'     => __( 'Author Color', 'aw_elementor' ),
+					'type'      => Controls_Manager::COLOR,
+					'selectors' => [
+							'{{WRAPPER}} .author' => 'color: {{VALUE}}',
+					],
+			]
+);
+$this->add_group_control(
+	Group_Control_Typography:: get_type(),
+			[
+					'name'     => 'author_typography',
+					'selector' => '{{WRAPPER}} .author',
+					'scheme'   => Scheme_Typography::TYPOGRAPHY_2,
+			]
+	);
+$this->end_controls_section();
 	}
 
 	protected function render() {
-		require AWE_PATH . '/modules/cards/template/view.php';
+		require AWE_PATH . '/modules/quote/template/view.php';
 	}
 
 	// protected function _content_template() {
-	// 	require AWE_PATH . '/modules/cards/template/content-template.php';
+	// 	require AWE_PATH . '/modules/quote/template/content-template.php';
 	// }
 
 }

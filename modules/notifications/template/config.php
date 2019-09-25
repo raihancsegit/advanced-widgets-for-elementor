@@ -10,9 +10,9 @@ use \Elementor\Group_Control_Background as Group_Control_Background;
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 /**
- * Elementor Perfecto aae Portfolio
+ * Elementor Perfecto awe Portfolio
  *
- * Elementor widget for aae portfolio
+ * Elementor widget for awe portfolio
  *
  * @since 1.0.0
  */
@@ -44,44 +44,44 @@ class Awe_Notifications extends Widget_Base {
 
 	protected  function get_profile_names() {
 		return [
-				'apple' => __( 'Apple', 'aa_elementor' ),
-				'behance' => __( 'Behance', 'aa_elementor' ),
-				'bitbucket' => __( 'BitBucket', 'aa_elementor' ),
-				'codepen' => __( 'CodePen', 'aa_elementor' ),
-				'delicious' => __( 'Delicious', 'aa_elementor' ),
-				'deviantart' => __( 'DeviantArt', 'aa_elementor' ),
-				'digg' => __( 'Digg', 'aa_elementor' ),
-				'dribbble' => __( 'Dribbble', 'aa_elementor' ),
-				'email' => __( 'Email', 'aa_elementor' ),
-				'facebook' => __( 'Facebook', 'aa_elementor' ),
-				'flickr' => __( 'Flicker', 'aa_elementor' ),
-				'foursquare' => __( 'FourSquare', 'aa_elementor' ),
-				'github' => __( 'Github', 'aa_elementor' ),
-				'houzz' => __( 'Houzz', 'aa_elementor' ),
-				'instagram' => __( 'Instagram', 'aa_elementor' ),
-				'jsfiddle' => __( 'JS Fiddle', 'aa_elementor' ),
-				'linkedin' => __( 'LinkedIn', 'aa_elementor' ),
-				'medium' => __( 'Medium', 'aa_elementor' ),
-				'pinterest' => __( 'Pinterest', 'aa_elementor' ),
-				'product-hunt' => __( 'Product Hunt', 'aa_elementor' ),
-				'reddit' => __( 'Reddit', 'aa_elementor' ),
-				'slideshare' => __( 'Slide Share', 'aa_elementor' ),
-				'snapchat' => __( 'Snapchat', 'aa_elementor' ),
-				'soundcloud' => __( 'SoundCloud', 'aa_elementor' ),
-				'spotify' => __( 'Spotify', 'aa_elementor' ),
-				'stack-overflow' => __( 'StackOverflow', 'aa_elementor' ),
-				'tripadvisor' => __( 'TripAdvisor', 'aa_elementor' ),
-				'tumblr' => __( 'Tumblr', 'aa_elementor' ),
-				'twitch' => __( 'Twitch', 'aa_elementor' ),
-				'twitter' => __( 'Twitter', 'aa_elementor' ),
-				'vimeo' => __( 'Vimeo', 'aa_elementor' ),
-				'vk' => __( 'VK', 'aa_elementor' ),
-				'website' => __( 'Website', 'aa_elementor' ),
-				'whatsapp' => __( 'WhatsApp', 'aa_elementor' ),
-				'wordpress' => __( 'WordPress', 'aa_elementor' ),
-				'xing' => __( 'Xing', 'aa_elementor' ),
-				'yelp' => __( 'Yelp', 'aa_elementor' ),
-				'youtube' => __( 'YouTube', 'aa_elementor' ),
+				'apple' => __( 'Apple', 'aw_elementor' ),
+				'behance' => __( 'Behance', 'aw_elementor' ),
+				'bitbucket' => __( 'BitBucket', 'aw_elementor' ),
+				'codepen' => __( 'CodePen', 'aw_elementor' ),
+				'delicious' => __( 'Delicious', 'aw_elementor' ),
+				'deviantart' => __( 'DeviantArt', 'aw_elementor' ),
+				'digg' => __( 'Digg', 'aw_elementor' ),
+				'dribbble' => __( 'Dribbble', 'aw_elementor' ),
+				'email' => __( 'Email', 'aw_elementor' ),
+				'facebook' => __( 'Facebook', 'aw_elementor' ),
+				'flickr' => __( 'Flicker', 'aw_elementor' ),
+				'foursquare' => __( 'FourSquare', 'aw_elementor' ),
+				'github' => __( 'Github', 'aw_elementor' ),
+				'houzz' => __( 'Houzz', 'aw_elementor' ),
+				'instagram' => __( 'Instagram', 'aw_elementor' ),
+				'jsfiddle' => __( 'JS Fiddle', 'aw_elementor' ),
+				'linkedin' => __( 'LinkedIn', 'aw_elementor' ),
+				'medium' => __( 'Medium', 'aw_elementor' ),
+				'pinterest' => __( 'Pinterest', 'aw_elementor' ),
+				'product-hunt' => __( 'Product Hunt', 'aw_elementor' ),
+				'reddit' => __( 'Reddit', 'aw_elementor' ),
+				'slideshare' => __( 'Slide Share', 'aw_elementor' ),
+				'snapchat' => __( 'Snapchat', 'aw_elementor' ),
+				'soundcloud' => __( 'SoundCloud', 'aw_elementor' ),
+				'spotify' => __( 'Spotify', 'aw_elementor' ),
+				'stack-overflow' => __( 'StackOverflow', 'aw_elementor' ),
+				'tripadvisor' => __( 'TripAdvisor', 'aw_elementor' ),
+				'tumblr' => __( 'Tumblr', 'aw_elementor' ),
+				'twitch' => __( 'Twitch', 'aw_elementor' ),
+				'twitter' => __( 'Twitter', 'aw_elementor' ),
+				'vimeo' => __( 'Vimeo', 'aw_elementor' ),
+				'vk' => __( 'VK', 'aw_elementor' ),
+				'website' => __( 'Website', 'aw_elementor' ),
+				'whatsapp' => __( 'WhatsApp', 'aw_elementor' ),
+				'wordpress' => __( 'WordPress', 'aw_elementor' ),
+				'xing' => __( 'Xing', 'aw_elementor' ),
+				'yelp' => __( 'Yelp', 'aw_elementor' ),
+				'youtube' => __( 'YouTube', 'aw_elementor' ),
 		];
 }
 
@@ -157,7 +157,7 @@ class Awe_Notifications extends Widget_Base {
 			$this->add_control(
 				'icon',
 						[
-							'label'       => __( 'Icon', 'aa_elementor' ),
+							'label'       => __( 'Icon', 'aw_elementor' ),
 							'type'        => Controls_Manager::ICON,
 							'label_block' => true,
 							'default'     => 'fa fa-exclamation-triangle',
@@ -183,10 +183,10 @@ class Awe_Notifications extends Widget_Base {
 		$this->add_control(
 			'button_text',
 			[
-					'label'       => __( 'Button Text', 'aa_elementor' ),
+					'label'       => __( 'Button Text', 'aw_elementor' ),
 					'type'        => Controls_Manager::TEXT,
-					'default'     => __( 'Interested', 'aa_elementor' ),
-					'placeholder' => __( 'Type button text here', 'aa_elementor' ),
+					'default'     => __( 'Interested', 'aw_elementor' ),
+					'placeholder' => __( 'Type button text here', 'aw_elementor' ),
 					'label_block' => true,
 			]
 	);
@@ -194,19 +194,19 @@ class Awe_Notifications extends Widget_Base {
 	$this->add_control(
 			'button_link',
 			[
-					'label'       => __( 'Link', 'aa_elementor' ),
+					'label'       => __( 'Link', 'aw_elementor' ),
 					'type'        => Controls_Manager::URL,
-					'placeholder' => __( 'https://example.com/', 'aa_elementor' ),
+					'placeholder' => __( 'https://example.com/', 'aw_elementor' ),
 			]
 	);
 
 	$this->add_control(
 			'button_text2',
 			[
-					'label'       => __( 'Button Text Close', 'aa_elementor' ),
+					'label'       => __( 'Button Text Close', 'aw_elementor' ),
 					'type'        => Controls_Manager::TEXT,
-					'default'     => __( 'No, not interested', 'aa_elementor' ),
-					'placeholder' => __( 'Type button text here', 'aa_elementor' ),
+					'default'     => __( 'No, not interested', 'aw_elementor' ),
+					'placeholder' => __( 'Type button text here', 'aw_elementor' ),
 					'label_block' => true,
 					
 			]
@@ -486,7 +486,7 @@ $this->add_group_control(
 $this->add_responsive_control(
 	'links_border_radius',
 	[
-			'label'      => __( 'Border Radius', 'aa_elementor' ),
+			'label'      => __( 'Border Radius', 'aw_elementor' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [ 'px', '%' ],
 			'selectors'  => [
@@ -499,14 +499,14 @@ $this->start_controls_tabs( '_tab_links_colors' );
 $this->start_controls_tab(
 	'_tab_links_normal',
 	[
-			'label' => __( 'Normal', 'aa_elementor' ),
+			'label' => __( 'Normal', 'aw_elementor' ),
 	]
 );
 
 $this->add_control(
 	'links_color',
 	[
-			'label'     => __( 'Text Color', 'aa_elementor' ),
+			'label'     => __( 'Text Color', 'aw_elementor' ),
 			'type'      => Controls_Manager::COLOR,
 			'selectors' => [
 					'{{WRAPPER}} .Message-button' => 'color: {{VALUE}}',
@@ -517,7 +517,7 @@ $this->add_control(
 $this->add_control(
 	'links_bg_color',
 	[
-			'label'     => __( 'Background Color', 'aa_elementor' ),
+			'label'     => __( 'Background Color', 'aw_elementor' ),
 			'type'      => Controls_Manager::COLOR,
 			'selectors' => [
 					'{{WRAPPER}} .Message-button' => 'background-color: {{VALUE}} !important',
@@ -529,14 +529,14 @@ $this->end_controls_tab();
 $this->start_controls_tab(
 	'_tab_links_hover',
 	[
-			'label' => __( 'Hover', 'aa_elementor' ),
+			'label' => __( 'Hover', 'aw_elementor' ),
 	]
 );
 
 $this->add_control(
 	'links_hover_color',
 	[
-			'label'     => __( 'Text Color', 'aa_elementor' ),
+			'label'     => __( 'Text Color', 'aw_elementor' ),
 			'type'      => Controls_Manager::COLOR,
 			'selectors' => [
 					'{{WRAPPER}} .Message-body a:hover, {{WRAPPER}} .Message-body a:focus' => 'color: {{VALUE}}',
@@ -547,7 +547,7 @@ $this->add_control(
 $this->add_control(
 	'links_hover_bg_color',
 	[
-			'label'     => __( 'Background Color', 'aa_elementor' ),
+			'label'     => __( 'Background Color', 'aw_elementor' ),
 			'type'      => Controls_Manager::COLOR,
 			'selectors' => [
 					'{{WRAPPER}} .Message-body a:hover, {{WRAPPER}} .Message-body a:focus' => 'background-color: {{VALUE}} !important',
@@ -558,7 +558,7 @@ $this->add_control(
 $this->add_control(
 	'links_hover_border_color',
 	[
-			'label'     => __( 'Border Color', 'aa_elementor' ),
+			'label'     => __( 'Border Color', 'aw_elementor' ),
 			'type'      => Controls_Manager::COLOR,
 			'selectors' => [
 					'{{WRAPPER}} .Message-body a:hover, {{WRAPPER}} .Message-body a:focus' => 'border-color: {{VALUE}};',

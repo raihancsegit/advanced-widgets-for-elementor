@@ -8,8 +8,16 @@ class Awe_Admin {
         'widget-glow-text-effects',
         'widget-cards',
         'widget-text-animation',
-        'maps-api',
-        'facebook_app_id',
+        'widget-quote',
+        'widget-caldera-forms',
+        'widget-cf7',
+        'widget-gravity-forms',
+        'widget-mailchimp-wp',
+        'widget-ninjaform',
+        'widget-wpform',
+        'widget-weform',
+        
+        
     ];
 
 	// Default settings
@@ -38,7 +46,7 @@ class Awe_Admin {
 	        'manage_options',
 	        'awe-settings',
 	        array($this, 'display_settings_pages'),
-	        plugins_url('/assets/images/menu-icon.png', __FILE__ ), 100
+	        'dashicons-admin-generic', 100
         ); 
         
 	}
@@ -192,7 +200,7 @@ function awe_for_elementor_admin_get_param_check(){
                             <div class="col">
                                 <div class="awe-widget-box">
                                     <div class="awe-widget-box-title">
-                                        <?php echo esc_html__('Glow Text Effects', ' aw_elementor'); ?>
+                                        <?php echo esc_html__('Text Effects', ' aw_elementor'); ?>
                                        <a href="#" class="awe-settings-preview" title="Preview">
                                             <span class="dashicons dashicons-visibility"></span>
                                         </a>
@@ -240,12 +248,154 @@ function awe_for_elementor_admin_get_param_check(){
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            
+                        <div class="row">
+
+                            <div class="col">
+                                <div class="awe-widget-box">
+                                    <div class="awe-widget-box-title">
+                                        <?php echo esc_html__('Quote', ' aw_elementor'); ?>
+                                       <a href="#" class="awe-settings-preview" title="Preview">
+                                            <span class="dashicons dashicons-visibility"></span>
+                                        </a>
+                                    </div>
+                                   <div class="awe-widget-box-content">
+                                        <label class="switch">
+                                            <input type="checkbox" id="widget-quote" name="widget-quote" <?php checked(1, $this->awe_get_settings['widget-quote'], true) ?>>
+                                            <span class="rectangle round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="awe-widget-box">
+                                    <div class="awe-widget-box-title">
+                                        <?php echo esc_html__('Caldera Forms', ' aw_elementor'); ?>
+                                       <a href="#" class="awe-settings-preview" title="Preview">
+                                            <span class="dashicons dashicons-visibility"></span>
+                                        </a>
+                                    </div>
+                                   <div class="awe-widget-box-content">
+                                        <label class="switch">
+                                            <input type="checkbox" id="widget-caldera-forms" name="widget-caldera-forms" <?php checked(1, $this->awe_get_settings['widget-caldera-forms'], true) ?>>
+                                            <span class="rectangle round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="awe-widget-box">
+                                    <div class="awe-widget-box-title">
+                                        <?php echo esc_html__('Contact From 7', ' aw_elementor'); ?>
+                                       <a href="#" class="awe-settings-preview" title="Preview">
+                                            <span class="dashicons dashicons-visibility"></span>
+                                        </a>
+                                    </div>
+                                   <div class="awe-widget-box-content">
+                                        <label class="switch">
+                                            <input type="checkbox" id="widget-cf7" name="widget-cf7" <?php checked(1, $this->awe_get_settings['widget-cf7'], true) ?>>
+                                            <span class="rectangle round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="awe-widget-box">
+                                    <div class="awe-widget-box-title">
+                                        <?php echo esc_html__('Gravity Forms', ' aw_elementor'); ?>
+                                       <a href="#" class="awe-settings-preview" title="Preview">
+                                            <span class="dashicons dashicons-visibility"></span>
+                                        </a>
+                                    </div>
+                                   <div class="awe-widget-box-content">
+                                        <label class="switch">
+                                            <input type="checkbox" id="widget-gravity-forms" name="widget-gravity-forms" <?php checked(1, $this->awe_get_settings['widget-gravity-forms'], true) ?>>
+                                            <span class="rectangle round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
                            
+                            
                             
                         </div>
                         <!-- row -->
+                        <div class="row">
+
+                            <div class="col">
+                                    <div class="awe-widget-box">
+                                        <div class="awe-widget-box-title">
+                                            <?php echo esc_html__('Mailchimp WP', ' aw_elementor'); ?>
+                                        <a href="#" class="awe-settings-preview" title="Preview">
+                                                <span class="dashicons dashicons-visibility"></span>
+                                            </a>
+                                        </div>
+                                    <div class="awe-widget-box-content">
+                                            <label class="switch">
+                                                <input type="checkbox" id="widget-mailchimp-wp" name="widget-mailchimp-wp" <?php checked(1, $this->awe_get_settings['widget-mailchimp-wp'], true) ?>>
+                                                <span class="rectangle round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="awe-widget-box">
+                                        <div class="awe-widget-box-title">
+                                            <?php echo esc_html__('Ninjaform', ' aw_elementor'); ?>
+                                            <a href="#" class="awe-settings-preview" title="Preview">
+                                                <span class="dashicons dashicons-visibility"></span>
+                                            </a>
+                                        </div>
+                                    <div class="awe-widget-box-content">
+                                            <label class="switch">
+                                                <input type="checkbox" id="widget-ninjaform" name="widget-ninjaform" <?php checked(1, $this->awe_get_settings['widget-ninjaform'], true) ?>>
+                                                <span class="rectangle round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="awe-widget-box">
+                                        <div class="awe-widget-box-title">
+                                            <?php echo esc_html__('WeForm', ' aw_elementor'); ?>
+                                            <a href="#" class="awe-settings-preview" title="Preview">
+                                                <span class="dashicons dashicons-visibility"></span>
+                                            </a>
+                                        </div>
+                                    <div class="awe-widget-box-content">
+                                            <label class="switch">
+                                                <input type="checkbox" id="widget-weform" name="widget-weform" <?php checked(1, $this->awe_get_settings['widget-weform'], true) ?>>
+                                                <span class="rectangle round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="awe-widget-box">
+                                        <div class="awe-widget-box-title">
+                                            <?php echo esc_html__('WpForm', ' aw_elementor'); ?>
+                                            <a href="#" class="awe-settings-preview" title="Preview">
+                                                <span class="dashicons dashicons-visibility"></span>
+                                            </a>
+                                        </div>
+                                    <div class="awe-widget-box-content">
+                                            <label class="switch">
+                                                <input type="checkbox" id="widget-wpform" name="widget-wpform" <?php checked(1, $this->awe_get_settings['widget-wpform'], true) ?>>
+                                                <span class="rectangle round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                        </div>
                         
             </div>
                 <button  class="button awe-btn awe-save-button" type="submit">
@@ -357,6 +507,15 @@ function awe_for_elementor_admin_get_param_check(){
             'widget-glow-text-effects'             => intval( $settings['widget-glow-text-effects'] ? 1 : 0 ),
             'widget-text-animation'                => intval( $settings['widget-text-animation'] ? 1 : 0 ),
             'widget-cards'                         => intval( $settings['widget-cards'] ? 1 : 0 ),
+            'widget-quote'                         => intval( $settings['widget-quote'] ? 1 : 0 ),
+            'widget-caldera-forms'                 => intval( $settings['widget-caldera-forms'] ? 1 : 0 ),
+            'widget-cf7'                           => intval( $settings['widget-cf7'] ? 1 : 0 ),
+            'widget-gravity-forms'                 => intval( $settings['widget-gravity-forms'] ? 1 : 0 ),
+            'widget-mailchimp-wp'                  => intval( $settings['widget-mailchimp-wp'] ? 1 : 0 ),
+            'widget-ninjaform'                     => intval( $settings['widget-ninjaform'] ? 1 : 0 ),
+            'widget-weform'                        => intval( $settings['widget-weform'] ? 1 : 0 ),
+            'widget-wpform'                        => intval( $settings['widget-wpform'] ? 1 : 0 ),
+            
             'maps-api'               =>  $settings['maps-api'] ? $settings['maps-api'] : 0 ,
             'facebook_app_id'        =>  $settings['facebook_app_id'] ? $settings['facebook_app_id'] : 0 ,
         );

@@ -56,7 +56,16 @@ class Advanced_Widgets_For_Elementor {
           'widget-notifications',
           'widget-glow-text-effects',
           'widget-cards',
-          'widget-text-animation'
+          'widget-text-animation',
+          'widget-quote',
+          'widget-caldera-forms',
+          'widget-cf7',
+          'widget-gravity-forms',
+          'widget-mailchimp-wp',
+          'widget-ninjaform',
+          'widget-wpform',
+          'widget-weform',
+          
 
       ];
 
@@ -83,7 +92,43 @@ class Advanced_Widgets_For_Elementor {
         if( $check_component_active['widget-text-animation'] ) {
           require_once AWE_PATH . '/modules/text-animation/widget.php';
         }
-       
+
+        // quote Elements
+        if( $check_component_active['widget-quote'] ) {
+          require_once AWE_PATH . '/modules/quote/widget.php';
+        }
+
+        // caldera-forms Elements
+        if( $check_component_active['widget-caldera-forms'] ) {
+          require_once AWE_PATH . '/modules/caldera-forms/widget.php';
+        }
+        // cf7 Elements
+        if( $check_component_active['widget-cf7'] ) {
+          require_once AWE_PATH . '/modules/cf7/widget.php';
+        }
+        // gravity-forms Elements
+        if( $check_component_active['widget-gravity-forms'] ) {
+          require_once AWE_PATH . '/modules/gravity-forms/widget.php';
+        }
+        // mailchimp-wp Elements
+        if( $check_component_active['widget-mailchimp-wp'] ) {
+          require_once AWE_PATH . '/modules/mailchimp-wp/widget.php';
+        }
+        // ninjaform Elements
+        if( $check_component_active['widget-ninjaform'] ) {
+          require_once AWE_PATH . '/modules/ninjaform/widget.php';
+        }
+        // weform Elements
+        if( $check_component_active['widget-weform'] ) {
+          require_once AWE_PATH . '/modules/weform/widget.php';
+        }
+        // wpform Elements
+        if( $check_component_active['widget-wpform'] ) {
+          require_once AWE_PATH . '/modules/wpform/widget.php';
+        }
+
+        
+        
       // helper functions
       require_once AWE_PATH . '/modules/helper-functions.php';
       require_once AWE_PATH . '/includes/helper.php';

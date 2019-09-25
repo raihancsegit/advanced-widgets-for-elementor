@@ -14,9 +14,9 @@ use Elementor\Utils;
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 /**
- * Elementor Perfecto aae Portfolio
+ * Elementor Perfecto awe Portfolio
  *
- * Elementor widget for aae portfolio
+ * Elementor widget for awe portfolio
  *
  * @since 1.0.0
  */
@@ -31,7 +31,7 @@ class Text_Animation extends Widget_Base {
 	}
 
 	public function get_icon() {
-		return 'ad ad-injection';
+		return 'ad ad-text-animation';
 	}
 
 	public function get_categories() {
@@ -48,44 +48,44 @@ class Text_Animation extends Widget_Base {
 
 	protected  function get_profile_names() {
 		return [
-				'apple' => __( 'Apple', 'aa_elementor' ),
-				'behance' => __( 'Behance', 'aa_elementor' ),
-				'bitbucket' => __( 'BitBucket', 'aa_elementor' ),
-				'codepen' => __( 'CodePen', 'aa_elementor' ),
-				'delicious' => __( 'Delicious', 'aa_elementor' ),
-				'deviantart' => __( 'DeviantArt', 'aa_elementor' ),
-				'digg' => __( 'Digg', 'aa_elementor' ),
-				'dribbble' => __( 'Dribbble', 'aa_elementor' ),
-				'email' => __( 'Email', 'aa_elementor' ),
-				'facebook' => __( 'Facebook', 'aa_elementor' ),
-				'flickr' => __( 'Flicker', 'aa_elementor' ),
-				'foursquare' => __( 'FourSquare', 'aa_elementor' ),
-				'github' => __( 'Github', 'aa_elementor' ),
-				'houzz' => __( 'Houzz', 'aa_elementor' ),
-				'instagram' => __( 'Instagram', 'aa_elementor' ),
-				'jsfiddle' => __( 'JS Fiddle', 'aa_elementor' ),
-				'linkedin' => __( 'LinkedIn', 'aa_elementor' ),
-				'medium' => __( 'Medium', 'aa_elementor' ),
-				'pinterest' => __( 'Pinterest', 'aa_elementor' ),
-				'product-hunt' => __( 'Product Hunt', 'aa_elementor' ),
-				'reddit' => __( 'Reddit', 'aa_elementor' ),
-				'slideshare' => __( 'Slide Share', 'aa_elementor' ),
-				'snapchat' => __( 'Snapchat', 'aa_elementor' ),
-				'soundcloud' => __( 'SoundCloud', 'aa_elementor' ),
-				'spotify' => __( 'Spotify', 'aa_elementor' ),
-				'stack-overflow' => __( 'StackOverflow', 'aa_elementor' ),
-				'tripadvisor' => __( 'TripAdvisor', 'aa_elementor' ),
-				'tumblr' => __( 'Tumblr', 'aa_elementor' ),
-				'twitch' => __( 'Twitch', 'aa_elementor' ),
-				'twitter' => __( 'Twitter', 'aa_elementor' ),
-				'vimeo' => __( 'Vimeo', 'aa_elementor' ),
-				'vk' => __( 'VK', 'aa_elementor' ),
-				'website' => __( 'Website', 'aa_elementor' ),
-				'whatsapp' => __( 'WhatsApp', 'aa_elementor' ),
-				'wordpress' => __( 'WordPress', 'aa_elementor' ),
-				'xing' => __( 'Xing', 'aa_elementor' ),
-				'yelp' => __( 'Yelp', 'aa_elementor' ),
-				'youtube' => __( 'YouTube', 'aa_elementor' ),
+				'apple' => __( 'Apple', 'aw_elementor' ),
+				'behance' => __( 'Behance', 'aw_elementor' ),
+				'bitbucket' => __( 'BitBucket', 'aw_elementor' ),
+				'codepen' => __( 'CodePen', 'aw_elementor' ),
+				'delicious' => __( 'Delicious', 'aw_elementor' ),
+				'deviantart' => __( 'DeviantArt', 'aw_elementor' ),
+				'digg' => __( 'Digg', 'aw_elementor' ),
+				'dribbble' => __( 'Dribbble', 'aw_elementor' ),
+				'email' => __( 'Email', 'aw_elementor' ),
+				'facebook' => __( 'Facebook', 'aw_elementor' ),
+				'flickr' => __( 'Flicker', 'aw_elementor' ),
+				'foursquare' => __( 'FourSquare', 'aw_elementor' ),
+				'github' => __( 'Github', 'aw_elementor' ),
+				'houzz' => __( 'Houzz', 'aw_elementor' ),
+				'instagram' => __( 'Instagram', 'aw_elementor' ),
+				'jsfiddle' => __( 'JS Fiddle', 'aw_elementor' ),
+				'linkedin' => __( 'LinkedIn', 'aw_elementor' ),
+				'medium' => __( 'Medium', 'aw_elementor' ),
+				'pinterest' => __( 'Pinterest', 'aw_elementor' ),
+				'product-hunt' => __( 'Product Hunt', 'aw_elementor' ),
+				'reddit' => __( 'Reddit', 'aw_elementor' ),
+				'slideshare' => __( 'Slide Share', 'aw_elementor' ),
+				'snapchat' => __( 'Snapchat', 'aw_elementor' ),
+				'soundcloud' => __( 'SoundCloud', 'aw_elementor' ),
+				'spotify' => __( 'Spotify', 'aw_elementor' ),
+				'stack-overflow' => __( 'StackOverflow', 'aw_elementor' ),
+				'tripadvisor' => __( 'TripAdvisor', 'aw_elementor' ),
+				'tumblr' => __( 'Tumblr', 'aw_elementor' ),
+				'twitch' => __( 'Twitch', 'aw_elementor' ),
+				'twitter' => __( 'Twitter', 'aw_elementor' ),
+				'vimeo' => __( 'Vimeo', 'aw_elementor' ),
+				'vk' => __( 'VK', 'aw_elementor' ),
+				'website' => __( 'Website', 'aw_elementor' ),
+				'whatsapp' => __( 'WhatsApp', 'aw_elementor' ),
+				'wordpress' => __( 'WordPress', 'aw_elementor' ),
+				'xing' => __( 'Xing', 'aw_elementor' ),
+				'yelp' => __( 'Yelp', 'aw_elementor' ),
+				'youtube' => __( 'YouTube', 'aw_elementor' ),
 		];
 }
 
@@ -119,10 +119,10 @@ class Text_Animation extends Widget_Base {
 		$this->add_control(
 				'title',
 					[
-					'label'       => __( 'Title', ' aw_elementor' ),
+					'label'       => __( 'Text', ' aw_elementor' ),
 					'type'        => Controls_Manager::TEXT,
-					'placeholder' => __( 'Enter Title', ' aw_elementor' ),
-					'default'     => __( 'Title', ' aw_elementor' ),
+					'placeholder' => __( 'Enter Text', ' aw_elementor' ),
+					'default'     => __( 'Enter Text', ' aw_elementor' ),
 					'label_block' => true,
 					'condition'   => [
 						'style' => [ 'style1','style2'],
@@ -130,26 +130,27 @@ class Text_Animation extends Widget_Base {
 					]
 			);
 
+
 			$this->add_responsive_control(
 				'align',
 				[
-						'label'   => __( 'Alignment', 'aa_elementor' ),
+						'label'   => __( 'Alignment', 'aw_elementor' ),
 						'type'    => Controls_Manager::CHOOSE,
 						'options' => [
 								'left' => [
-										'title' => __( 'Left', 'aa_elementor' ),
+										'title' => __( 'Left', 'aw_elementor' ),
 										'icon'  => 'fa fa-align-left',
 								],
 								'center' => [
-										'title' => __( 'Center', 'aa_elementor' ),
+										'title' => __( 'Center', 'aw_elementor' ),
 										'icon'  => 'fa fa-align-center',
 								],
 								'right' => [
-										'title' => __( 'Right', 'aa_elementor' ),
+										'title' => __( 'Right', 'aw_elementor' ),
 										'icon'  => 'fa fa-align-right',
 								],
 								'justify' => [
-										'title' => __( 'Justify', 'aa_elementor' ),
+										'title' => __( 'Justify', 'aw_elementor' ),
 										'icon'  => 'fa fa-align-justify',
 								],
 						],
@@ -169,6 +170,9 @@ class Text_Animation extends Widget_Base {
 				[
 						'label' => __( 'Common Style', ' aw_elementor' ),
 						'tab'   => Controls_Manager::TAB_STYLE,
+						'condition'   => [
+							'style' => [ 'style1'],
+							],
 				]
 		);
 		
@@ -233,6 +237,9 @@ class Text_Animation extends Widget_Base {
 				[
 						'label' => __( 'Text Style', ' aw_elementor' ),
 						'tab'   => Controls_Manager::TAB_STYLE,
+						'condition'   => [
+							'style' => [ 'style1'],
+							],
 				]
 			);
 		
@@ -257,7 +264,95 @@ class Text_Animation extends Widget_Base {
 				]
 			);
 		
+		$this->end_controls_section();
+
+		$this->start_controls_section(
+			'_section_style2_common',
+				[
+						'label' => __( 'Common Style', ' aw_elementor' ),
+						'tab'   => Controls_Manager::TAB_STYLE,
+						'condition'   => [
+							'style' => [ 'style2'],
+							],
+				]
+		);
+		
+				$this->add_responsive_control(
+					'padding2',
+							[
+									'label'      => __( 'Padding', ' aw_elementor'),
+									'type'       => Controls_Manager::DIMENSIONS,
+									'size_units' => ['px', 'em', '%'],
+									'selectors'  => [
+											'{{WRAPPER}} .awe-text-ani2' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+									],
+							]
+				);
+		
+				$this->add_responsive_control(
+				'margin2',
+						[
+								'label'      => __( 'Margin', ' aw_elementor'),
+								'type'       => Controls_Manager::DIMENSIONS,
+								'size_units' => ['px', 'em', '%'],
+								'selectors'  => [
+										'{{WRAPPER}} .awe-text-ani2' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+								],
+						]
+				);
+				$this->add_group_control(
+					Group_Control_Background::get_type(),
+					[
+							'name' => 'p_background2',
+							'label' => __( 'Background Color', ' aw_elementor' ),
+							'types' => [ 'classic', 'gradient'],
+							'selector' => '{{WRAPPER}} .awe-text-ani2',
+					]
+			);
+		
+		
+			$this->add_group_control(
+					Group_Control_Border:: get_type(),
+					[
+							'name'     => 'links_border2',
+							'selector' => '{{WRAPPER}} .awe-text-ani2'
+					]
+			);
+		
+			$this->add_responsive_control(
+				'border_radius2',
+					[
+							'label'      => __( 'Border Radius', ' aw_elementor' ),
+							'type'       => Controls_Manager::DIMENSIONS,
+							'size_units' => [ 'px', '%' ],
+							'selectors'  => [
+									'{{WRAPPER}} .awe-text-ani2' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+							],
+					]
+			);
+				
+		$this->end_controls_section();	
+
+		$this->start_controls_section(
+			'_section_style_text2',
+				[
+						'label' => __( 'Text Style', ' aw_elementor' ),
+						'tab'   => Controls_Manager::TAB_STYLE,
+						'condition'   => [
+							'style' => [ 'style2'],
+							],
+				]
+			);
+		
 			
+			$this->add_group_control(
+				Group_Control_Typography:: get_type(),
+				[
+						'name'     => 'title2_typography',
+						'selector' => '{{WRAPPER}} .awe-text-ani2 h1',
+						'scheme'   => Scheme_Typography::TYPOGRAPHY_2,
+				]
+			);
 		
 		$this->end_controls_section();
 

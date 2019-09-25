@@ -10,9 +10,9 @@ use \Elementor\Group_Control_Background as Group_Control_Background;
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 /**
- * Elementor Perfecto aae Portfolio
+ * Elementor Perfecto awe Portfolio
  *
- * Elementor widget for aae portfolio
+ * Elementor widget for awe portfolio
  *
  * @since 1.0.0
  */
@@ -23,11 +23,11 @@ class Glow_Text_Effects extends Widget_Base {
 	}
 
 	public function get_title() {
-		return esc_html__( 'Glow Text Effects', ' aw_elementor' );
+		return esc_html__( 'Text Effects', ' aw_elementor' );
 	}
 
 	public function get_icon() {
-		return 'ad ad-injection';
+		return 'ad ad-text-animation';
 	}
 
 	public function get_categories() {
@@ -44,44 +44,44 @@ class Glow_Text_Effects extends Widget_Base {
 
 	protected  function get_profile_names() {
 		return [
-				'apple' => __( 'Apple', 'aa_elementor' ),
-				'behance' => __( 'Behance', 'aa_elementor' ),
-				'bitbucket' => __( 'BitBucket', 'aa_elementor' ),
-				'codepen' => __( 'CodePen', 'aa_elementor' ),
-				'delicious' => __( 'Delicious', 'aa_elementor' ),
-				'deviantart' => __( 'DeviantArt', 'aa_elementor' ),
-				'digg' => __( 'Digg', 'aa_elementor' ),
-				'dribbble' => __( 'Dribbble', 'aa_elementor' ),
-				'email' => __( 'Email', 'aa_elementor' ),
-				'facebook' => __( 'Facebook', 'aa_elementor' ),
-				'flickr' => __( 'Flicker', 'aa_elementor' ),
-				'foursquare' => __( 'FourSquare', 'aa_elementor' ),
-				'github' => __( 'Github', 'aa_elementor' ),
-				'houzz' => __( 'Houzz', 'aa_elementor' ),
-				'instagram' => __( 'Instagram', 'aa_elementor' ),
-				'jsfiddle' => __( 'JS Fiddle', 'aa_elementor' ),
-				'linkedin' => __( 'LinkedIn', 'aa_elementor' ),
-				'medium' => __( 'Medium', 'aa_elementor' ),
-				'pinterest' => __( 'Pinterest', 'aa_elementor' ),
-				'product-hunt' => __( 'Product Hunt', 'aa_elementor' ),
-				'reddit' => __( 'Reddit', 'aa_elementor' ),
-				'slideshare' => __( 'Slide Share', 'aa_elementor' ),
-				'snapchat' => __( 'Snapchat', 'aa_elementor' ),
-				'soundcloud' => __( 'SoundCloud', 'aa_elementor' ),
-				'spotify' => __( 'Spotify', 'aa_elementor' ),
-				'stack-overflow' => __( 'StackOverflow', 'aa_elementor' ),
-				'tripadvisor' => __( 'TripAdvisor', 'aa_elementor' ),
-				'tumblr' => __( 'Tumblr', 'aa_elementor' ),
-				'twitch' => __( 'Twitch', 'aa_elementor' ),
-				'twitter' => __( 'Twitter', 'aa_elementor' ),
-				'vimeo' => __( 'Vimeo', 'aa_elementor' ),
-				'vk' => __( 'VK', 'aa_elementor' ),
-				'website' => __( 'Website', 'aa_elementor' ),
-				'whatsapp' => __( 'WhatsApp', 'aa_elementor' ),
-				'wordpress' => __( 'WordPress', 'aa_elementor' ),
-				'xing' => __( 'Xing', 'aa_elementor' ),
-				'yelp' => __( 'Yelp', 'aa_elementor' ),
-				'youtube' => __( 'YouTube', 'aa_elementor' ),
+				'apple' => __( 'Apple', 'aw_elementor' ),
+				'behance' => __( 'Behance', 'aw_elementor' ),
+				'bitbucket' => __( 'BitBucket', 'aw_elementor' ),
+				'codepen' => __( 'CodePen', 'aw_elementor' ),
+				'delicious' => __( 'Delicious', 'aw_elementor' ),
+				'deviantart' => __( 'DeviantArt', 'aw_elementor' ),
+				'digg' => __( 'Digg', 'aw_elementor' ),
+				'dribbble' => __( 'Dribbble', 'aw_elementor' ),
+				'email' => __( 'Email', 'aw_elementor' ),
+				'facebook' => __( 'Facebook', 'aw_elementor' ),
+				'flickr' => __( 'Flicker', 'aw_elementor' ),
+				'foursquare' => __( 'FourSquare', 'aw_elementor' ),
+				'github' => __( 'Github', 'aw_elementor' ),
+				'houzz' => __( 'Houzz', 'aw_elementor' ),
+				'instagram' => __( 'Instagram', 'aw_elementor' ),
+				'jsfiddle' => __( 'JS Fiddle', 'aw_elementor' ),
+				'linkedin' => __( 'LinkedIn', 'aw_elementor' ),
+				'medium' => __( 'Medium', 'aw_elementor' ),
+				'pinterest' => __( 'Pinterest', 'aw_elementor' ),
+				'product-hunt' => __( 'Product Hunt', 'aw_elementor' ),
+				'reddit' => __( 'Reddit', 'aw_elementor' ),
+				'slideshare' => __( 'Slide Share', 'aw_elementor' ),
+				'snapchat' => __( 'Snapchat', 'aw_elementor' ),
+				'soundcloud' => __( 'SoundCloud', 'aw_elementor' ),
+				'spotify' => __( 'Spotify', 'aw_elementor' ),
+				'stack-overflow' => __( 'StackOverflow', 'aw_elementor' ),
+				'tripadvisor' => __( 'TripAdvisor', 'aw_elementor' ),
+				'tumblr' => __( 'Tumblr', 'aw_elementor' ),
+				'twitch' => __( 'Twitch', 'aw_elementor' ),
+				'twitter' => __( 'Twitter', 'aw_elementor' ),
+				'vimeo' => __( 'Vimeo', 'aw_elementor' ),
+				'vk' => __( 'VK', 'aw_elementor' ),
+				'website' => __( 'Website', 'aw_elementor' ),
+				'whatsapp' => __( 'WhatsApp', 'aw_elementor' ),
+				'wordpress' => __( 'WordPress', 'aw_elementor' ),
+				'xing' => __( 'Xing', 'aw_elementor' ),
+				'yelp' => __( 'Yelp', 'aw_elementor' ),
+				'youtube' => __( 'YouTube', 'aw_elementor' ),
 		];
 }
 
@@ -128,23 +128,23 @@ class Glow_Text_Effects extends Widget_Base {
 			$this->add_responsive_control(
 				'align',
 				[
-						'label'   => __( 'Alignment', 'aa_elementor' ),
+						'label'   => __( 'Alignment', 'aw_elementor' ),
 						'type'    => Controls_Manager::CHOOSE,
 						'options' => [
 								'left' => [
-										'title' => __( 'Left', 'aa_elementor' ),
+										'title' => __( 'Left', 'aw_elementor' ),
 										'icon'  => 'fa fa-align-left',
 								],
 								'center' => [
-										'title' => __( 'Center', 'aa_elementor' ),
+										'title' => __( 'Center', 'aw_elementor' ),
 										'icon'  => 'fa fa-align-center',
 								],
 								'right' => [
-										'title' => __( 'Right', 'aa_elementor' ),
+										'title' => __( 'Right', 'aw_elementor' ),
 										'icon'  => 'fa fa-align-right',
 								],
 								'justify' => [
-										'title' => __( 'Justify', 'aa_elementor' ),
+										'title' => __( 'Justify', 'aw_elementor' ),
 										'icon'  => 'fa fa-align-justify',
 								],
 						],
@@ -158,7 +158,7 @@ class Glow_Text_Effects extends Widget_Base {
 		$this->add_responsive_control(
 			'text_size',
 			[
-					'label'      => __( 'Text Size', 'aa_elementor' ),
+					'label'      => __( 'Text Size', 'aw_elementor' ),
 					'type'       => Controls_Manager::SLIDER,
 					'size_units' => ['px'],
 					'selectors'  => [
@@ -255,7 +255,7 @@ $this->start_controls_section(
 		$this->add_control(
 			'text_color',
 			[
-					'label'     => __( 'Text Color', 'aa_elementor' ),
+					'label'     => __( 'Text Color', 'aw_elementor' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
 							'{{WRAPPER}} .glow-text' => 'color: {{VALUE}}',
