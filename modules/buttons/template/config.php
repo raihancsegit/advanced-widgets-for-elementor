@@ -20,14 +20,14 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  *
  * @since 1.0.0
  */
-class Awe_Badge extends Widget_Base {
+class Awe_Buttons extends Widget_Base {
 
 	public function get_name() {
-		return 'awe-badge';
+		return 'awe-buttons';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Badges', ' aw_elementor' );
+		return esc_html__( 'Buttons', ' aw_elementor' );
 	}
 
 	public function get_icon() {
@@ -43,7 +43,7 @@ class Awe_Badge extends Widget_Base {
 	 * @since 1.3.0
 	 **/
 	public function get_script_depends() {
-		return [ 'awe-badges' ];
+		return [ 'awe-buttons' ];
 	}
 
 	protected  function get_profile_names() {
@@ -94,7 +94,7 @@ class Awe_Badge extends Widget_Base {
 		$this->start_controls_section(
 			'_section_info',
 			[
-				'label' => __( 'Badges', ' aw_elementor' ),
+				'label' => __( 'Buttons', ' aw_elementor' ),
 				'tab'   => Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -115,79 +115,7 @@ class Awe_Badge extends Widget_Base {
         );
 
 
-			$this->add_control(
-					'badge_text1',
-						[
-							'label'       => __( 'Badge text 1', ' aw_elementor' ),
-							'type'        => Controls_Manager::TEXT,
-							'placeholder' => __( 'Enter Badge Text 1', ' aw_elementor' ),
-							'default'     => __( 'Special offers', ' aw_elementor' ),
-							'label_block' => true,
-							'condition'   => [
-								'style' => [ 'style1'],
-								],
-						]
-			);
-			$this->add_control(
-					'badge_text2',
-						[
-							'label'       => __( 'Badge text 2', ' aw_elementor' ),
-							'type'        => Controls_Manager::TEXT,
-							'placeholder' => __( 'Enter Badge Text 2', ' aw_elementor' ),
-							'default'     => __( 'only today', ' aw_elementor' ),
-							'label_block' => true,
-							'condition'   => [
-								'style' => [ 'style1'],
-								],
-						]
-			);
-			$this->add_control(
-					'badge_text3',
-						[
-							'label'       => __( 'Badge text 3', ' aw_elementor' ),
-							'type'        => Controls_Manager::TEXT,
-							'placeholder' => __( 'Enter Badge Text 2', ' aw_elementor' ),
-							'default'     => __( 'Black Friday', ' aw_elementor' ),
-							'label_block' => true,
-							'condition'   => [
-								'style' => [ 'style1'],
-								],
-						]
-			);
-
-			
-			$this->add_control(
-				'image',
-				[
-						'label'   => __( 'Image', 'aw_elementor' ),
-						'type'    => Controls_Manager::MEDIA,
-						'default' => [
-								'url' => Utils::get_placeholder_image_src(),
-						],
-						'condition'   => [
-							'style' => [ 'style2'],
-							],
-					 
-				]
-		);
-			$this->add_control(
-				'link',
-						[
-							'label'   => __( 'Link', 'aw_elementor' ),
-							'type'    => Controls_Manager::URL,
-							'dynamic' => [
-								'active' => true,
-							],
-							'placeholder' => __( 'https://your-link.com', 'aw_elementor' ),
-							'default'     => [
-								'url' => '#',
-							],
-							'condition'   => [
-								'style' => [ 'style1'],
-								],
-						]
-					);
-
+		
 $this->end_controls_section();
 
 $this->start_controls_section(
@@ -362,11 +290,11 @@ $this->end_controls_section();
 }
 
 	protected function render() {
-		require AWE_PATH . '/modules/badge/template/view.php';
+		require AWE_PATH . '/modules/buttons/template/view.php';
 	}
 
 	// protected function _content_template() {
-	// 	require AWE_PATH . '/modules/badge/template/content-template.php';
+	// 	require AWE_PATH . '/modules/buttons/template/content-template.php';
 	// }
 
 }

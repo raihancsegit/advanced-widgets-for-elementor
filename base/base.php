@@ -63,9 +63,10 @@ class Advanced_Widgets_For_Elementor {
           'widget-gravity-forms',
           'widget-mailchimp-wp',
           'widget-ninjaform',
+          'widget-weform',
+          'widget-buttons',
           'widget-badge',
           'widget-wpform',
-          'widget-weform',
           
 
       ];
@@ -120,11 +121,7 @@ class Advanced_Widgets_For_Elementor {
           require_once AWE_PATH . '/modules/ninjaform/widget.php';
         }
 
-        // badge Elements
-        if( $check_component_active['widget-badge'] ) {
-          require_once AWE_PATH . '/modules/badge/widget.php';
-        }
-
+       
         // weform Elements
         if( $check_component_active['widget-weform'] ) {
           require_once AWE_PATH . '/modules/weform/widget.php';
@@ -134,7 +131,16 @@ class Advanced_Widgets_For_Elementor {
           require_once AWE_PATH . '/modules/wpform/widget.php';
         }
 
-        
+         // badge Elements
+         if( $check_component_active['widget-badge'] ) {
+          require_once AWE_PATH . '/modules/badge/widget.php';
+        }
+
+
+        // buttons Elements
+        if( $check_component_active['widget-buttons'] ) {
+          require_once AWE_PATH . '/modules/buttons/widget.php';
+        }
 
         
         

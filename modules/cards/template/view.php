@@ -10,10 +10,13 @@ $this->add_inline_editing_attributes( 'title2', 'none' );
 $this->add_render_attribute( 'title2', 'class', 'card2__title awe-card-title' );
 $this->add_inline_editing_attributes( 'content', 'none' );
 $this->add_render_attribute( 'content', 'class', 'awe-card-content' );
+
+$target = $settings['link']['is_external'] ? ' target="_blank"' : '';
+$nofollow = $settings['link']['nofollow'] ? ' rel="nofollow"' : '';
 ?>
     <?php if($settings['style'] === 'style1'):?>
         <article class="card awe-cards">
-            <a href="<?php echo esc_url($settings['link']['url'])?>" class="card__link" target="_blank">
+            <a href="<?php echo esc_url($settings['link']['url'])?>" class="card__link" <?php echo esc_attr($target);?> <?php echo esc_attr($nofollow);?>>
                 <!-- Icon -->
                 <div class="card__icon awe-card-icon">
                     <svg viewbox="0 0 1129 994">

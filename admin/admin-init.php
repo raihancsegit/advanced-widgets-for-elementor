@@ -14,9 +14,10 @@ class Awe_Admin {
         'widget-gravity-forms',
         'widget-mailchimp-wp',
         'widget-ninjaform',
-        'widget-badge',
         'widget-wpform',
         'widget-weform',
+        'widget-badge',
+        'widget-buttons',
         
         
     ];
@@ -397,7 +398,7 @@ function awe_for_elementor_admin_get_param_check(){
                                 </div>
                                 
                         </div>
-                        <div class="rwo">
+                        <div class="row">
                                 <div class="col">
                                     <div class="awe-widget-box">
                                         <div class="awe-widget-box-title">
@@ -414,7 +415,24 @@ function awe_for_elementor_admin_get_param_check(){
                                         </div>
                                     </div>
                                 </div>
-                        
+
+                                <div class="col">
+                                    <div class="awe-widget-box">
+                                        <div class="awe-widget-box-title">
+                                            <?php echo esc_html__('Buttons', ' aw_elementor'); ?>
+                                            <a href="#" class="awe-settings-preview" title="Preview">
+                                                <span class="dashicons dashicons-visibility"></span>
+                                            </a>
+                                        </div>
+                                    <div class="awe-widget-box-content">
+                                            <label class="switch">
+                                                <input type="checkbox" id="widget-buttons" name="widget-buttons" <?php checked(1, $this->awe_get_settings['widget-buttons'], true) ?>>
+                                                <span class="rectangle round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                               
                         </div>
                         
             </div>
@@ -533,9 +551,11 @@ function awe_for_elementor_admin_get_param_check(){
             'widget-gravity-forms'                 => intval( $settings['widget-gravity-forms'] ? 1 : 0 ),
             'widget-mailchimp-wp'                  => intval( $settings['widget-mailchimp-wp'] ? 1 : 0 ),
             'widget-ninjaform'                     => intval( $settings['widget-ninjaform'] ? 1 : 0 ),
-            'widget-badge'                         => intval( $settings['widget-badge'] ? 1 : 0 ),
             'widget-weform'                        => intval( $settings['widget-weform'] ? 1 : 0 ),
             'widget-wpform'                        => intval( $settings['widget-wpform'] ? 1 : 0 ),
+            'widget-badge'                         => intval( $settings['widget-badge'] ? 1 : 0 ),
+            'widget-buttons'                       => intval( $settings['widget-buttons'] ? 1 : 0 ),
+            
             
             'maps-api'               =>  $settings['maps-api'] ? $settings['maps-api'] : 0 ,
             'facebook_app_id'        =>  $settings['facebook_app_id'] ? $settings['facebook_app_id'] : 0 ,

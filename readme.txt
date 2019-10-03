@@ -159,36 +159,6 @@ Yes, absolutely.
 12. Screenshots 12
 14. Screenshots 14
 
-== Changelog ==
-
-= 1.0.2 - August 28, 2019 =
-
-* New: weForms
-* New: WPForms
-* New: Countdown
-* New: Twitter Feed
-* New: Ninja Forms
-* New: Caldera Forms
-* New: Contact Form 7
-* New: Advanced Tabs
-* New: Progressbar
-* New: Image Comapre
-* New: Countdown
-* New: Mailchimp For WP
-* New: Calendly Widget
-* New: Clients
-* Fix: Infobox Widget
-* Fix: inline Notice Widget
-* Fix: Testimonial Slider Widget
-* Option: Option Add Alert Widget
-
-= 1.0.1 - August 7, 2019 =
-
-* New: TimeLine
-* New: Dual Button
-* New: Divider
-* New: Testimonial Slider
-
 = 1.0.0 - July 25, 2019 =
 
 * Initial release with this 12 widgets:
