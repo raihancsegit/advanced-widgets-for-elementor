@@ -674,3 +674,71 @@
 .blockquote h4:first-letter {
  margin-left:-12px;
 }
+
+.badge {
+  position: relative;
+  letter-spacing: 0.08em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  transform: rotate(-14deg);
+  text-align: center;
+  filter: drop-shadow(0.25em 0.7em 0.95em rgba(0, 0, 0, 0.8));
+ /* min-size + (max-size - min-size) * ( (100vw - min-width) / ( max-width - min-width) ) */
+  font-size: calc(11px + 14 * ( (100vw - 420px) / ( 860) ));
+}
+@media screen and (max-width: 420px) {
+  .badge {
+    font-size: 11px;
+ }
+}
+@media screen and (min-width: 1280px) {
+  .badge {
+    font-size: 25px;
+ }
+}
+.badge::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 10em;
+  height: 10em;
+  border-radius: 100%;
+  background: #111;
+  opacity: 0.8;
+  transition: opacity 0.3s linear;
+}
+.badge:hover {
+  color: #fff;
+  text-decoration: none;
+  transform: rotate(-10deg) scale(1.05);
+}
+.badge:hover::before {
+  opacity: 0.9;
+}
+.badge svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  z-index: 0;
+  width: 10em;
+  height: 10em;
+}
+.badge span {
+  display: block;
+  background: #111;
+  border-radius: 0.4em;
+  padding: 0.4em 1em;
+  z-index: 1;
+  min-width: 11em;
+  border: 1px solid;
+  text-transform: uppercase;
+}
