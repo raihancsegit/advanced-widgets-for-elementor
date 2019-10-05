@@ -48,44 +48,44 @@ class Awe_Badge extends Widget_Base {
 
 	protected  function get_profile_names() {
 		return [
-				'apple' => __( 'Apple', 'aw_elementor' ),
-				'behance' => __( 'Behance', 'aw_elementor' ),
-				'bitbucket' => __( 'BitBucket', 'aw_elementor' ),
-				'codepen' => __( 'CodePen', 'aw_elementor' ),
-				'delicious' => __( 'Delicious', 'aw_elementor' ),
-				'deviantart' => __( 'DeviantArt', 'aw_elementor' ),
-				'digg' => __( 'Digg', 'aw_elementor' ),
-				'dribbble' => __( 'Dribbble', 'aw_elementor' ),
-				'email' => __( 'Email', 'aw_elementor' ),
-				'facebook' => __( 'Facebook', 'aw_elementor' ),
-				'flickr' => __( 'Flicker', 'aw_elementor' ),
-				'foursquare' => __( 'FourSquare', 'aw_elementor' ),
-				'github' => __( 'Github', 'aw_elementor' ),
-				'houzz' => __( 'Houzz', 'aw_elementor' ),
-				'instagram' => __( 'Instagram', 'aw_elementor' ),
-				'jsfiddle' => __( 'JS Fiddle', 'aw_elementor' ),
-				'linkedin' => __( 'LinkedIn', 'aw_elementor' ),
-				'medium' => __( 'Medium', 'aw_elementor' ),
-				'pinterest' => __( 'Pinterest', 'aw_elementor' ),
-				'product-hunt' => __( 'Product Hunt', 'aw_elementor' ),
-				'reddit' => __( 'Reddit', 'aw_elementor' ),
-				'slideshare' => __( 'Slide Share', 'aw_elementor' ),
-				'snapchat' => __( 'Snapchat', 'aw_elementor' ),
-				'soundcloud' => __( 'SoundCloud', 'aw_elementor' ),
-				'spotify' => __( 'Spotify', 'aw_elementor' ),
+				'apple'          => __( 'Apple', 'aw_elementor' ),
+				'behance'        => __( 'Behance', 'aw_elementor' ),
+				'bitbucket'      => __( 'BitBucket', 'aw_elementor' ),
+				'codepen'        => __( 'CodePen', 'aw_elementor' ),
+				'delicious'      => __( 'Delicious', 'aw_elementor' ),
+				'deviantart'     => __( 'DeviantArt', 'aw_elementor' ),
+				'digg'           => __( 'Digg', 'aw_elementor' ),
+				'dribbble'       => __( 'Dribbble', 'aw_elementor' ),
+				'email'          => __( 'Email', 'aw_elementor' ),
+				'facebook'       => __( 'Facebook', 'aw_elementor' ),
+				'flickr'         => __( 'Flicker', 'aw_elementor' ),
+				'foursquare'     => __( 'FourSquare', 'aw_elementor' ),
+				'github'         => __( 'Github', 'aw_elementor' ),
+				'houzz'          => __( 'Houzz', 'aw_elementor' ),
+				'instagram'      => __( 'Instagram', 'aw_elementor' ),
+				'jsfiddle'       => __( 'JS Fiddle', 'aw_elementor' ),
+				'linkedin'       => __( 'LinkedIn', 'aw_elementor' ),
+				'medium'         => __( 'Medium', 'aw_elementor' ),
+				'pinterest'      => __( 'Pinterest', 'aw_elementor' ),
+				'product-hunt'   => __( 'Product Hunt', 'aw_elementor' ),
+				'reddit'         => __( 'Reddit', 'aw_elementor' ),
+				'slideshare'     => __( 'Slide Share', 'aw_elementor' ),
+				'snapchat'       => __( 'Snapchat', 'aw_elementor' ),
+				'soundcloud'     => __( 'SoundCloud', 'aw_elementor' ),
+				'spotify'        => __( 'Spotify', 'aw_elementor' ),
 				'stack-overflow' => __( 'StackOverflow', 'aw_elementor' ),
-				'tripadvisor' => __( 'TripAdvisor', 'aw_elementor' ),
-				'tumblr' => __( 'Tumblr', 'aw_elementor' ),
-				'twitch' => __( 'Twitch', 'aw_elementor' ),
-				'twitter' => __( 'Twitter', 'aw_elementor' ),
-				'vimeo' => __( 'Vimeo', 'aw_elementor' ),
-				'vk' => __( 'VK', 'aw_elementor' ),
-				'website' => __( 'Website', 'aw_elementor' ),
-				'whatsapp' => __( 'WhatsApp', 'aw_elementor' ),
-				'wordpress' => __( 'WordPress', 'aw_elementor' ),
-				'xing' => __( 'Xing', 'aw_elementor' ),
-				'yelp' => __( 'Yelp', 'aw_elementor' ),
-				'youtube' => __( 'YouTube', 'aw_elementor' ),
+				'tripadvisor'    => __( 'TripAdvisor', 'aw_elementor' ),
+				'tumblr'         => __( 'Tumblr', 'aw_elementor' ),
+				'twitch'         => __( 'Twitch', 'aw_elementor' ),
+				'twitter'        => __( 'Twitter', 'aw_elementor' ),
+				'vimeo'          => __( 'Vimeo', 'aw_elementor' ),
+				'vk'             => __( 'VK', 'aw_elementor' ),
+				'website'        => __( 'Website', 'aw_elementor' ),
+				'whatsapp'       => __( 'WhatsApp', 'aw_elementor' ),
+				'wordpress'      => __( 'WordPress', 'aw_elementor' ),
+				'xing'           => __( 'Xing', 'aw_elementor' ),
+				'yelp'           => __( 'Yelp', 'aw_elementor' ),
+				'youtube'        => __( 'YouTube', 'aw_elementor' ),
 		];
 }
 
@@ -240,9 +240,9 @@ $this->start_controls_section(
 	$this->add_group_control(
 			Group_Control_Border:: get_type(),
 			[
-					'name'     => 'links_border',
-					'selector' => '{{WRAPPER}} .badge::before',
-					'condition'   => [
+					'name'      => 'links_border',
+					'selector'  => '{{WRAPPER}} .badge::before',
+					'condition' => [
 						'style' => [ 'style1'],
 						],
 			]
@@ -319,11 +319,11 @@ $this->add_group_control(
 	$this->add_group_control(
 		Group_Control_Background::get_type(),
 		[
-				'name' => 'p_background_middle',
-				'label' => __( 'Background Color', ' aw_elementor' ),
-				'types' => [ 'classic', 'gradient'],
-				'selector' => '{{WRAPPER}} .badge span',
-				'condition'   => [
+				'name'      => 'p_background_middle',
+				'label'     => __( 'Background Color', ' aw_elementor' ),
+				'types'     => [ 'classic', 'gradient'],
+				'selector'  => '{{WRAPPER}} .badge span',
+				'condition' => [
 					'style' => [ 'style1'],
 					],
 		]
@@ -333,9 +333,9 @@ $this->add_group_control(
 $this->add_group_control(
 		Group_Control_Border:: get_type(),
 		[
-				'name'     => 'links_border_middle',
-				'selector' => '{{WRAPPER}} .badge span',
-				'condition'   => [
+				'name'      => 'links_border_middle',
+				'selector'  => '{{WRAPPER}} .badge span',
+				'condition' => [
 					'style' => [ 'style1'],
 					],
 		]

@@ -112,10 +112,83 @@ class Awe_Buttons extends Widget_Base {
 					'style1' => __( 'Style 1', ' aw_elementor' ),
                 ],
             ]
-        );
-
-
+		);
 		
+		$this->add_control(
+			'text',
+			[
+				'label'   => __( 'Text', 'aw_elementor' ),
+				'type'    => Controls_Manager::TEXT,
+				'dynamic' => [
+					'active' => true,
+				],
+				'default'     => __( 'Click here', 'aw_elementor' ),
+				'placeholder' => __( 'Click here', 'aw_elementor' ),
+			]
+        );
+        
+        $this->add_control(
+			'link',
+			[
+				'label'   => __( 'Link', 'aw_elementor' ),
+				'type'    => Controls_Manager::URL,
+				'dynamic' => [
+					'active' => true,
+				],
+				'placeholder' => __( 'https://your-link.com', 'aw_elementor' ),
+				'default'     => [
+					'url' => '#',
+				],
+			]
+        );
+        
+        $this->add_responsive_control(
+			'align',
+			[
+				'label'   => __( 'Alignment', 'aw_elementor' ),
+				'type'    => Controls_Manager::CHOOSE,
+				'options' => [
+					'left'    => [
+						'title' => __( 'Left', 'aw_elementor' ),
+						'icon'  => 'fa fa-align-left',
+					],
+					'center' => [
+						'title' => __( 'Center', 'aw_elementor' ),
+						'icon'  => 'fa fa-align-center',
+					],
+					'right' => [
+						'title' => __( 'Right', 'aw_elementor' ),
+						'icon'  => 'fa fa-align-right',
+					],
+					'justify' => [
+						'title' => __( 'Justified', 'aw_elementor' ),
+						'icon'  => 'fa fa-align-justify',
+					],
+				],
+				'prefix_class' => 'elementor%s-align-',
+				'default'      => '',
+			]
+        );
+        $this->add_control(
+            'show_icon',
+            [
+                'label'        => __( 'Show Icon', 'aw_elementor' ),
+                'type'         => Controls_Manager::SWITCHER,
+                'label_on'     => __( 'Show', 'aw_elementor' ),
+                'label_off'    => __( 'Hide', 'aw_elementor' ),
+                'return_value' => 'yes',
+                'default'      => 'no',
+            ]
+        );
+        $this->add_control(
+			'icon',
+			[
+				'label'       => __( 'Icon', 'aw_elementor' ),
+				'type'        => Controls_Manager::ICON,
+				'label_block' => true,
+				'default' => 'fa fa-smile-o',
+			]
+        );	
 $this->end_controls_section();
 
 $this->start_controls_section(
@@ -135,7 +208,7 @@ $this->start_controls_section(
 							'type'       => Controls_Manager::DIMENSIONS,
 							'size_units' => ['px', 'em', '%'],
 							'selectors'  => [
-									'{{WRAPPER}} .bage-section' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+									'{{WRAPPER}} .btn1 .button' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 							],
 					]
 		);
@@ -147,7 +220,7 @@ $this->start_controls_section(
 						'type'       => Controls_Manager::DIMENSIONS,
 						'size_units' => ['px', 'em', '%'],
 						'selectors'  => [
-								'{{WRAPPER}} .bage-section' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+								'{{WRAPPER}} .btn1 .button' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 						],
 				]
 		);
@@ -157,7 +230,7 @@ $this->start_controls_section(
 					'name' => 'p_background',
 					'label' => __( 'Background Color', ' aw_elementor' ),
 					'types' => [ 'classic', 'gradient'],
-					'selector' => '{{WRAPPER}} .badge::before',
+					'selector' => '{{WRAPPER}} .btn1 .button',
 					'condition'   => [
 						'style' => [ 'style1'],
 						],
@@ -169,7 +242,7 @@ $this->start_controls_section(
 			Group_Control_Border:: get_type(),
 			[
 					'name'     => 'links_border',
-					'selector' => '{{WRAPPER}} .badge::before',
+					'selector' => '{{WRAPPER}} .btn1 .button',
 					'condition'   => [
 						'style' => [ 'style1'],
 						],
@@ -183,7 +256,7 @@ $this->start_controls_section(
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%' ],
 					'selectors'  => [
-							'{{WRAPPER}} .badge::before' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+							'{{WRAPPER}} .btn1 .button' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}} !important;',
 					],
 					'condition'   => [
 						'style' => [ 'style1'],
@@ -194,9 +267,9 @@ $this->start_controls_section(
 $this->end_controls_section();
 
 $this->start_controls_section(
-	'_section_style_middle',
+	'_section_style_text',
 		[
-				'label' => __( 'Middle Section Style', ' aw_elementor' ),
+				'label' => __( 'Text Style', ' aw_elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 		]
 );
@@ -204,85 +277,22 @@ $this->start_controls_section(
 $this->add_group_control(
 	Group_Control_Typography:: get_type(),
 			[
-					'name'     => 'middle_typography',
-					'selector' => '{{WRAPPER}} .badge span',
+					'name'     => 'text_typography',
+					'selector' => '{{WRAPPER}} .btn1 .button',
 					'scheme'   => Scheme_Typography::TYPOGRAPHY_2,
 			]
 	);
 
 	$this->add_control(
-		'middle_color',
-				[
-						'label'     => __( 'Text Color', 'aw_elementor' ),
-						'type'      => Controls_Manager::COLOR,
-						'selectors' => [
-								'{{WRAPPER}} .badge span' => 'color: {{VALUE}}',
-						],
-				]
-	);
-
-	$this->add_responsive_control(
-		'padding_middle',
-				[
-						'label'      => __( 'Padding', ' aw_elementor'),
-						'type'       => Controls_Manager::DIMENSIONS,
-						'size_units' => ['px', 'em', '%'],
-						'selectors'  => [
-								'{{WRAPPER}} .badge span' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-						],
-				]
-	);
-
-	$this->add_responsive_control(
-	'margin_middle',
+		'text_color',
 			[
-					'label'      => __( 'Margin', ' aw_elementor'),
-					'type'       => Controls_Manager::DIMENSIONS,
-					'size_units' => ['px', 'em', '%'],
-					'selectors'  => [
-							'{{WRAPPER}} .badge span' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					],
+				'label'     => __( 'Text Color', 'aw_elementor' ),
+				'type'      => Controls_Manager::COLOR,
+				'selectors' => [
+						'{{WRAPPER}} .btn1 .button' => 'color: {{VALUE}}',
+				],
 			]
 	);
-	$this->add_group_control(
-		Group_Control_Background::get_type(),
-		[
-				'name' => 'p_background_middle',
-				'label' => __( 'Background Color', ' aw_elementor' ),
-				'types' => [ 'classic', 'gradient'],
-				'selector' => '{{WRAPPER}} .badge span',
-				'condition'   => [
-					'style' => [ 'style1'],
-					],
-		]
-);
-
-
-$this->add_group_control(
-		Group_Control_Border:: get_type(),
-		[
-				'name'     => 'links_border_middle',
-				'selector' => '{{WRAPPER}} .badge span',
-				'condition'   => [
-					'style' => [ 'style1'],
-					],
-		]
-);
-
-$this->add_responsive_control(
-	'border_radius_middle',
-		[
-				'label'      => __( 'Border Radius', ' aw_elementor' ),
-				'type'       => Controls_Manager::DIMENSIONS,
-				'size_units' => [ 'px', '%' ],
-				'selectors'  => [
-						'{{WRAPPER}} .badge span' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-				],
-				'condition'   => [
-					'style' => [ 'style1'],
-					],
-		]
-);
 
 
 $this->end_controls_section();

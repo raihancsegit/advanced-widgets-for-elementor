@@ -4,14 +4,14 @@
  * Plugin URI: https://advancedwidgets.com/elementor
  * Description: The most advanced collection of Elementor page builder widgets.
  * Version: 1.0.0
- * Author: Advanced Widgets
+ * Author: Dracula
  * Author URI: https://advancedwidgets.com/
  * License: GPLv2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: aw_elementor
  * Domain Path: /languages/
  *
- * @package Advanced_Addons
+ * @package Advanced_widgets
  */
 
     if( !function_exists('add_action') ) {

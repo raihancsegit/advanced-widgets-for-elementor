@@ -11,7 +11,7 @@ function awe_for_elemetor_admin_notice(){
 	<p>%s</p>
 	</div>
 EOD;
-	$notice = "Thanks for using Advanced Addons For Elementor";
+	$notice = "Thanks for using Advanced Widges For Elementor";
 	printf($notice_container, "notice-info", $notice);
 
 }
