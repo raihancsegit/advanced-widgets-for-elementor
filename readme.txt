@@ -1,6 +1,6 @@
 === Advanced Widgets for Elementor ===
 Plugin Name: Advanced Widgets for Elementor
-Version: 1.0.0
+Version: 1.0.1
 Author: Dracula
 Author URI: https://advancedWidgets.com/
 Contributors: smartcoderbd
@@ -159,17 +159,19 @@ Yes, absolutely.
 12. Screenshots 12
 14. Screenshots 14
 
-= 1.0.0 - July 25, 2019 =
+= 1.0.0 - Octobar 9, 2019 =
 
 * Initial release with this 12 widgets:
-* Team Member
-* Alert
+* Badges
 * Buttons
-* Inline-notice
-* Instagram
-* Post Block
-* Promo Box
-* Quotes
-* Search Box
-* Social Links
-* Testimonial Cards
+* Text Effect
+* text Notifications
+* Cards
+* Notifications
+* wpfroms
+* weforms
+* Contact Form 7
+* mailchimp
+* caldera froms
+* Gravatiy froms
+
