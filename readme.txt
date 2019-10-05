@@ -1,10 +1,10 @@
-=== Advanced Addons for Elementor ===
-Plugin Name: Advanced Addons for Elementor
+=== Advanced Widgets for Elementor ===
+Plugin Name: Advanced Widgets for Elementor
 Version: 1.0.0
-Author: Advanced Addons
-Author URI: https://advancedaddons.com/
-Contributors: B-07, advancedaddons
-Tags: elementor, form, page builder, widget, addon
+Author: Dracula
+Author URI: https://advancedWidgets.com/
+Contributors: smartcoderbd
+Tags: elementor, form, page builder, widget, addon,advanced widgets,advanced widgets for elementor,advanced addons,elementor elements,elementor advanced elements,elementor advanced widgets
 Requires at least: 4.7
 Tested up to: 5.2.2
 Requires PHP: 5.4
@@ -15,7 +15,7 @@ The most advanced collection of Elementor page builder widgets.
 
 == Description ==
 
-It's time to take your [Elementor](https://wordpress.org/plugins/elementor/) page building experience to the next level. It's time to experience the most uniue Elementor widgets with the most advanced options. It's time for [Advanced Addons for Elementor.](https://advancedaddons.com/elementor)
+It's time to take your [Elementor](https://wordpress.org/plugins/elementor/) page building experience to the next level. It's time to experience the most uniue Elementor widgets with the most advanced options. It's time for [Advanced Addons for Elementor.](https://advancedwidgest.com/elementor)
 
 With our 30+ advanced widgets you can create slick and sophisticated websites in less time with no coding required. Each widget is highly customizable, has trendy and unique design and lots of advanced options. So you can literelly create anything you want, only sky is the limit! 
 
@@ -24,52 +24,52 @@ With our 30+ advanced widgets you can create slick and sophisticated websites in
 We packed 30+ most useful widgets with unique designs to enhance your Elementor Page Building experience.
 
 ### Post Widgets:
-1. [Post Grid](https://advancedaddons.com/elementor/) - 2/3/4 column post grid
-2. [Post Masonry](https://advancedaddons.com/elementor/) - 2/3/4 column post masonry style
-3. [Post List](https://advancedaddons.com/elementor/) - Show you posts in list styles
-4. [Post Carousel](https://advancedaddons.com/elementor/) - Even you can create carousel from your posts
+1. [Post Grid](https://advancedwidgest.com/elementor/) - 2/3/4 column post grid
+2. [Post Masonry](https://advancedwidgest.com/elementor/) - 2/3/4 column post masonry style
+3. [Post List](https://advancedwidgest.com/elementor/) - Show you posts in list styles
+4. [Post Carousel](https://advancedwidgest.com/elementor/) - Even you can create carousel from your posts
 
 
 ### Content Widgets
-1. [Team Member](https://advancedaddons.com/elementor/) - Feature your team members with few clicks
-2. [Alerts](https://advancedaddons.com/elementor/) - Take alert styles to next level
-3. [Inline Notices](https://advancedaddons.com/elementor/) - Show notices in boxes
-4. [Quotes Card](https://advancedaddons.com/elementor/) - Feature quotes in style
-5. [Logo Carousel](https://advancedaddons.com/elementor/) - Highlight brands/product logos in carousel
-6. [Tabs](https://advancedaddons.com/elementor/) - Include tab to put information in different styles
-7. [Advanced Buttons](https://advancedaddons.com/elementor/) - Forget about the boring default buttons
-8. [Dual Buttons](https://advancedaddons.com/elementor/) - Bual buttons are perfect for ecommerce and promotions
-9. [Timeline](https://advancedaddons.com/elementor/) - Interactive timeline to show various contents
-10. [Search Box](https://advancedaddons.com/elementor/) - Put a search box anywhere
-11. [Divider](https://advancedaddons.com/elementor/) - Section divider with 4 styles
+1. [Team Member](https://advancedwidgest.com/elementor/) - Feature your team members with few clicks
+2. [Alerts](https://advancedwidgest.com/elementor/) - Take alert styles to next level
+3. [Inline Notices](https://advancedwidgest.com/elementor/) - Show notices in boxes
+4. [Quotes Card](https://advancedwidgest.com/elementor/) - Feature quotes in style
+5. [Logo Carousel](https://advancedwidgest.com/elementor/) - Highlight brands/product logos in carousel
+6. [Tabs](https://advancedwidgest.com/elementor/) - Include tab to put information in different styles
+7. [Advanced Buttons](https://advancedwidgest.com/elementor/) - Forget about the boring default buttons
+8. [Dual Buttons](https://advancedwidgest.com/elementor/) - Bual buttons are perfect for ecommerce and promotions
+9. [Timeline](https://advancedwidgest.com/elementor/) - Interactive timeline to show various contents
+10. [Search Box](https://advancedwidgest.com/elementor/) - Put a search box anywhere
+11. [Divider](https://advancedwidgest.com/elementor/) - Section divider with 4 styles
 
 ### Creative Widgets
-1. [Icon Box](https://advancedaddons.com/elementor/) - Create beautiful icon boxes using icons, links and texts, and make them slick using the built in positioning features
-2. [Promo Box](https://advancedaddons.com/elementor/) - – Showcare your content heading in amazing way
-3. [Image Compare](https://advancedaddons.com/elementor/) - Let your viewers compare between two images
-4. [Fun Factors](https://advancedaddons.com/elementor/) - Show your facts & figures with counter widget
-5. [Progress Bar](https://advancedaddons.com/elementor/) - Display progress bars with 4+ different styles
-6. [Countdown](https://advancedaddons.com/elementor/) - Create sense of urgency with this widget. It’s perfect for under construction pages, events, sale items, etc
+1. [Icon Box](https://advancedwidgest.com/elementor/) - Create beautiful icon boxes using icons, links and texts, and make them slick using the built in positioning features
+2. [Promo Box](https://advancedwidgest.com/elementor/) - – Showcare your content heading in amazing way
+3. [Image Compare](https://advancedwidgest.com/elementor/) - Let your viewers compare between two images
+4. [Fun Factors](https://advancedwidgest.com/elementor/) - Show your facts & figures with counter widget
+5. [Progress Bar](https://advancedwidgest.com/elementor/) - Display progress bars with 4+ different styles
+6. [Countdown](https://advancedwidgest.com/elementor/) - Create sense of urgency with this widget. It’s perfect for under construction pages, events, sale items, etc
 
 ### Testimonials and Reviews Widgets:
-1. [Testimonial Card](https://advancedaddons.com/elementor/testimonials/) - Showcase what other said about your brand & Increase Your Credibility
-2. [Testimonial Slider](https://advancedaddons.com/elementor/testimonials/) - Showcase what other said about your brand & Increase Your Credibility in interactive sliders
+1. [Testimonial Card](https://advancedwidgest.com/elementor/testimonials/) - Showcase what other said about your brand & Increase Your Credibility
+2. [Testimonial Slider](https://advancedwidgest.com/elementor/testimonials/) - Showcase what other said about your brand & Increase Your Credibility in interactive sliders
 
 ### Tables, Charts and Data Widgets:
-1. [Pricing Table](https://advancedaddons.com/elementor/pricing-table/) - SCreate beautiful pricing tables with lots of customizations and sleek look-n-feel using this widget
-2. [Pricing Menu](https://advancedaddons.com/elementor/pricing-menu/) - Create beautiful pricing menu with lots of customizations using this widget
+1. [Pricing Table](https://advancedwidgest.com/elementor/pricing-table/) - SCreate beautiful pricing tables with lots of customizations and sleek look-n-feel using this widget
+2. [Pricing Menu](https://advancedwidgest.com/elementor/pricing-menu/) - Create beautiful pricing menu with lots of customizations using this widget
 
 ### Social Feed Widgets:
-1. [Instagram Feed](https://advancedaddons.com/elementor/instagram-feed/) - Showcase your Instagram photos to your visitor
-2. [Twitter Feed](https://advancedaddons.com/elementor/twitter-feed/) - Showcase your latest tweets to your visitor
+1. [Instagram Feed](https://advancedwidgest.com/elementor/instagram-feed/) - Showcase your Instagram photos to your visitor
+2. [Twitter Feed](https://advancedwidgest.com/elementor/twitter-feed/) - Showcase your latest tweets to your visitor
 
 ### Form Widgets
-1. [Gravity Forms](https://advancedaddons.com/elementor/gravity-forms/) - Completely customizable and you can control any styling.
-2. [Ninja Forms](https://advancedaddons.com/elementor/ninja-forms/) - Easily create your form style just the way you want
-3. [Caldera Forms](https://advancedaddons.com/elementor/caldera-forms/) - Design effective mobile-friendly forms
-4. [WPForms](https://advancedaddons.com/elementor/wpforms/) - Create powerful WordPress forms in minutes
-5. [weForms](https://advancedaddons.com/elementor/weforms/) - Get the fastest form building experience 
-6. [MailChimp for WP](https://advancedaddons.com/elementor/mailchimp/) - Get beautiful MailChimp newsletter subcription form
+1. [Gravity Forms](https://advancedwidgest.com/elementor/gravity-forms/) - Completely customizable and you can control any styling.
+2. [Ninja Forms](https://advancedwidgest.com/elementor/ninja-forms/) - Easily create your form style just the way you want
+3. [Caldera Forms](https://advancedwidgest.com/elementor/caldera-forms/) - Design effective mobile-friendly forms
+4. [WPForms](https://advancedwidgest.com/elementor/wpforms/) - Create powerful WordPress forms in minutes
+5. [weForms](https://advancedwidgest.com/elementor/weforms/) - Get the fastest form building experience 
+6. [MailChimp for WP](https://advancedwidgest.com/elementor/mailchimp/) - Get beautiful MailChimp newsletter subcription form
 
 ### More free widgets and design variations coming every week! 
 
@@ -87,13 +87,13 @@ We packed 30+ most useful widgets with unique designs to enhance your Elementor 
 
 ### Documentation and Support
 
-- For documentation and tutorials go to our [Documentation](https://advancedaddons.com/elementor/docs/). 
+- For documentation and tutorials go to our [Documentation](https://advancedwidgest.com/elementor/docs/). 
 - If you have any more questions, visit our support on the [Plugin's Forum](https://wordpress.org/support/plugin/advanced-addons-for-elementor).
-- For more information about features, FAQs and documentation, check out our website at [Advanced Addons for Elementor](https://advancedaddons.com/elementor/).
+- For more information about features, FAQs and documentation, check out our website at [Advanced Addons for Elementor](https://advancedwidgest.com/elementor/).
 
 ### Report Bugs or Contribute 
 
-Bug reports are welcomed on [GitHub](https://github.com/advancedaddons/elementor/issues). Please note GitHub is not a support forum, and issues that aren’t properly qualified as bugs will be closed. If you want to contribute on this project, please fork the repository from Github. 
+Bug reports are welcomed on [GitHub](https://github.com/advancedwidgest/elementor/issues). Please note GitHub is not a support forum, and issues that aren’t properly qualified as bugs will be closed. If you want to contribute on this project, please fork the repository from Github. 
 
 
 == Installation ==
